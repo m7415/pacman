@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/Entity.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Entity.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Entity_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ENTITY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ENTITY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Maze_8h.html">Maze.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classEntity.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity.html">Entity</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classEntity.html#a05586ad4efbbd7d0843242a13e731667">Entity</a>(<span class="keywordtype">float</span> <a class="code" href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">x</a>, <span class="keywordtype">float</span> <a class="code" href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">y</a>, <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classEntity.html#a6f2db49ab57bbc7a04f000b2d2ebcda4">   31</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classEntity.html#a6f2db49ab57bbc7a04f000b2d2ebcda4">render</a>(<span class="keywordtype">int</span> frame, SDL_Renderer *renderer, SDL_Texture *texture) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEntity.html#af9a3acd3e4e68b891109de44a909c61f">setDirection</a>(<span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEntity.html#a43a066e3ab4376eb6afbade526c2d1e2">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEntity.html#a1628120ebbd5b236a029eaa4a9547313">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">   37</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">x</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">   38</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">y</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classEntity.html#a1de3d8d9ab8088f61e6726069b26fa60">   39</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEntity.html#a1de3d8d9ab8088f61e6726069b26fa60">speed</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classEntity.html#a73167471f72662bb137a378cc0657384">   41</a></span>&#160;    std::vector&lt;SDL_Rect&gt; <a class="code" href="classEntity.html#a73167471f72662bb137a378cc0657384">sprites</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classEntity.html#a7b43204dbec3d724a4833162c9a70b18">   42</a></span>&#160;    <span class="keyword">virtual</span> SDL_Rect <a class="code" href="classEntity.html#a7b43204dbec3d724a4833162c9a70b18">getSprite</a>(<span class="keywordtype">int</span> frame, <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>) = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classEntity.html#a87dde488e9722ebbffddab3b818b4c2d">isAtIntersection</a>(std::shared_ptr&lt;Intersection&gt; dest);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ENTITY_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aMaze_8h_html"><div class="ttname"><a href="Maze_8h.html">Maze.h</a></div></div>
+<div class="ttc" id="aclassEntity_html"><div class="ttname"><a href="classEntity.html">Entity</a></div><div class="ttdoc">Entity class.</div><div class="ttdef"><b>Definition:</b> Entity.h:18</div></div>
+<div class="ttc" id="aclassEntity_html_a05586ad4efbbd7d0843242a13e731667"><div class="ttname"><a href="classEntity.html#a05586ad4efbbd7d0843242a13e731667">Entity::Entity</a></div><div class="ttdeci">Entity(float x, float y, int direction)</div><div class="ttdef"><b>Definition:</b> Entity.cpp:3</div></div>
+<div class="ttc" id="aclassEntity_html_a1628120ebbd5b236a029eaa4a9547313"><div class="ttname"><a href="classEntity.html#a1628120ebbd5b236a029eaa4a9547313">Entity::getY</a></div><div class="ttdeci">float getY() const</div><div class="ttdef"><b>Definition:</b> Entity.cpp:9</div></div>
+<div class="ttc" id="aclassEntity_html_a1de3d8d9ab8088f61e6726069b26fa60"><div class="ttname"><a href="classEntity.html#a1de3d8d9ab8088f61e6726069b26fa60">Entity::speed</a></div><div class="ttdeci">float speed</div><div class="ttdef"><b>Definition:</b> Entity.h:39</div></div>
+<div class="ttc" id="aclassEntity_html_a43a066e3ab4376eb6afbade526c2d1e2"><div class="ttname"><a href="classEntity.html#a43a066e3ab4376eb6afbade526c2d1e2">Entity::getX</a></div><div class="ttdeci">float getX() const</div><div class="ttdef"><b>Definition:</b> Entity.cpp:7</div></div>
+<div class="ttc" id="aclassEntity_html_a6f2db49ab57bbc7a04f000b2d2ebcda4"><div class="ttname"><a href="classEntity.html#a6f2db49ab57bbc7a04f000b2d2ebcda4">Entity::render</a></div><div class="ttdeci">virtual void render(int frame, SDL_Renderer *renderer, SDL_Texture *texture)=0</div><div class="ttdoc">render the entity</div></div>
+<div class="ttc" id="aclassEntity_html_a73167471f72662bb137a378cc0657384"><div class="ttname"><a href="classEntity.html#a73167471f72662bb137a378cc0657384">Entity::sprites</a></div><div class="ttdeci">std::vector&lt; SDL_Rect &gt; sprites</div><div class="ttdef"><b>Definition:</b> Entity.h:41</div></div>
+<div class="ttc" id="aclassEntity_html_a7b43204dbec3d724a4833162c9a70b18"><div class="ttname"><a href="classEntity.html#a7b43204dbec3d724a4833162c9a70b18">Entity::getSprite</a></div><div class="ttdeci">virtual SDL_Rect getSprite(int frame, int direction)=0</div></div>
+<div class="ttc" id="aclassEntity_html_a87dde488e9722ebbffddab3b818b4c2d"><div class="ttname"><a href="classEntity.html#a87dde488e9722ebbffddab3b818b4c2d">Entity::isAtIntersection</a></div><div class="ttdeci">bool isAtIntersection(std::shared_ptr&lt; Intersection &gt; dest)</div><div class="ttdoc">return wether the entity is at an intersection</div><div class="ttdef"><b>Definition:</b> Entity.cpp:11</div></div>
+<div class="ttc" id="aclassEntity_html_a8b23bd918644de44e25a7f08ed55d1e2"><div class="ttname"><a href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">Entity::direction</a></div><div class="ttdeci">int direction</div><div class="ttdef"><b>Definition:</b> Entity.h:40</div></div>
+<div class="ttc" id="aclassEntity_html_abc2d19ee6ff26b8520428894da6a8f68"><div class="ttname"><a href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">Entity::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> Entity.h:37</div></div>
+<div class="ttc" id="aclassEntity_html_af4966f81d91cc8f8d5eb9e9002240c49"><div class="ttname"><a href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">Entity::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> Entity.h:38</div></div>
+<div class="ttc" id="aclassEntity_html_af9a3acd3e4e68b891109de44a909c61f"><div class="ttname"><a href="classEntity.html#af9a3acd3e4e68b891109de44a909c61f">Entity::setDirection</a></div><div class="ttdeci">void setDirection(int d)</div><div class="ttdef"><b>Definition:</b> Entity.cpp:5</div></div>
+<div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

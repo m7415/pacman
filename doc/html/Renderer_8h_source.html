@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/Renderer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Renderer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Renderer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RENDERER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RENDERER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Entity_8h.html">Entity.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Ghosts_8h.html">Ghosts.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Gomme_8h.html">Gomme.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Maze_8h.html">Maze.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pacman_8h.html">Pacman.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_mixer.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_ttf.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classRenderer.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRenderer.html">Renderer</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classRenderer.html#a7ebf46f54dab9905f79b80f7fddb76a6">Renderer</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classRenderer.html#afeee408862d5bd6255a6882d47e6d5cd">~Renderer</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#aefe6c9be3bbb7261623fd45bf9316ab6">render</a>(<span class="keyword">const</span> <a class="code" href="classMaze.html">Maze</a> &amp;maze, std::shared_ptr&lt;Pacman&gt; pacman,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                std::vector&lt;std::shared_ptr&lt;Ghosts&gt;&gt; ghosts, <span class="keywordtype">int</span> score, <span class="keywordtype">int</span> state, <span class="keywordtype">int</span> lives);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#a3a515f7ae40af4bd2062a1e554c9d18f">updateScreen</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#a98ebc0e656e993447265f8913a352af5">createWindow</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#af7936059b0fd1fdf2676de94ad129a64">createRenderer</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#a382fec24e17d31a08aaebb163357e3e9">loadResources</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#a617f25477eabe8a61c795f24cdd46b2d">loadMusic</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#af1629566d938eaa883adfa02aa121673">drawScore</a>(<span class="keywordtype">int</span> score);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#a89e265e580d083f9f1f58777f4cd4a1e">drawLives</a>(<span class="keywordtype">int</span> lives);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRenderer.html#a8f462c3895ff36a4694c21b4735c8ed0">animateDeath</a>(std::shared_ptr&lt;Pacman&gt; pacman);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classRenderer.html#a6cb53f6046afd78eafad503d16b0c07b">   67</a></span>&#160;    SDL_Window *<a class="code" href="classRenderer.html#a6cb53f6046afd78eafad503d16b0c07b">window</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classRenderer.html#a4a9e4d101b69f92bf17877079ab72254">   68</a></span>&#160;    SDL_Renderer *<a class="code" href="classRenderer.html#a4a9e4d101b69f92bf17877079ab72254">renderer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classRenderer.html#a72f4f112af2fb70afebed6fc909963ae">   69</a></span>&#160;    SDL_Surface *<a class="code" href="classRenderer.html#a72f4f112af2fb70afebed6fc909963ae">surface_bmp</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classRenderer.html#a1131f9a9c3e92d1d6b5581652253a86a">   70</a></span>&#160;    SDL_Texture *<a class="code" href="classRenderer.html#a1131f9a9c3e92d1d6b5581652253a86a">texture_bmp</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classRenderer.html#aea9dc9ae27fc18561b60fd229dee66d7">   71</a></span>&#160;    Mix_Music *<a class="code" href="classRenderer.html#aea9dc9ae27fc18561b60fd229dee66d7">music_start</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classRenderer.html#acd21c43753c8840787285e51f23193c8">   72</a></span>&#160;    Mix_Music *<a class="code" href="classRenderer.html#acd21c43753c8840787285e51f23193c8">music_death</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classRenderer.html#a580b08145ef127083406f139b60a2788">   73</a></span>&#160;    Mix_Music *<a class="code" href="classRenderer.html#a580b08145ef127083406f139b60a2788">music_chomp</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classRenderer.html#aec5ec57541b6c3f9d9817375ef256f5f">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRenderer.html#aec5ec57541b6c3f9d9817375ef256f5f">screenWidth</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classRenderer.html#abbec8ff9ba100cc41b697dd3a5a9af9f">   76</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRenderer.html#abbec8ff9ba100cc41b697dd3a5a9af9f">screenHeight</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classRenderer.html#a0a10acb86a10156c2aa2dc8fa5fdbac8">   77</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRenderer.html#a0a10acb86a10156c2aa2dc8fa5fdbac8">frame</a> = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RENDERER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aEntity_8h_html"><div class="ttname"><a href="Entity_8h.html">Entity.h</a></div></div>
+<div class="ttc" id="aGhosts_8h_html"><div class="ttname"><a href="Ghosts_8h.html">Ghosts.h</a></div></div>
+<div class="ttc" id="aGomme_8h_html"><div class="ttname"><a href="Gomme_8h.html">Gomme.h</a></div></div>
+<div class="ttc" id="aMaze_8h_html"><div class="ttname"><a href="Maze_8h.html">Maze.h</a></div></div>
+<div class="ttc" id="aPacman_8h_html"><div class="ttname"><a href="Pacman_8h.html">Pacman.h</a></div></div>
+<div class="ttc" id="aclassMaze_html"><div class="ttname"><a href="classMaze.html">Maze</a></div><div class="ttdoc">Maze class.</div><div class="ttdef"><b>Definition:</b> Maze.h:29</div></div>
+<div class="ttc" id="aclassRenderer_html"><div class="ttname"><a href="classRenderer.html">Renderer</a></div><div class="ttdoc">The Renderer class.</div><div class="ttdef"><b>Definition:</b> Renderer.h:24</div></div>
+<div class="ttc" id="aclassRenderer_html_a0a10acb86a10156c2aa2dc8fa5fdbac8"><div class="ttname"><a href="classRenderer.html#a0a10acb86a10156c2aa2dc8fa5fdbac8">Renderer::frame</a></div><div class="ttdeci">int frame</div><div class="ttdef"><b>Definition:</b> Renderer.h:77</div></div>
+<div class="ttc" id="aclassRenderer_html_a1131f9a9c3e92d1d6b5581652253a86a"><div class="ttname"><a href="classRenderer.html#a1131f9a9c3e92d1d6b5581652253a86a">Renderer::texture_bmp</a></div><div class="ttdeci">SDL_Texture * texture_bmp</div><div class="ttdef"><b>Definition:</b> Renderer.h:70</div></div>
+<div class="ttc" id="aclassRenderer_html_a382fec24e17d31a08aaebb163357e3e9"><div class="ttname"><a href="classRenderer.html#a382fec24e17d31a08aaebb163357e3e9">Renderer::loadResources</a></div><div class="ttdeci">void loadResources()</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:20</div></div>
+<div class="ttc" id="aclassRenderer_html_a3a515f7ae40af4bd2062a1e554c9d18f"><div class="ttname"><a href="classRenderer.html#a3a515f7ae40af4bd2062a1e554c9d18f">Renderer::updateScreen</a></div><div class="ttdeci">void updateScreen()</div><div class="ttdoc">This function updates the screen.</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:214</div></div>
+<div class="ttc" id="aclassRenderer_html_a4a9e4d101b69f92bf17877079ab72254"><div class="ttname"><a href="classRenderer.html#a4a9e4d101b69f92bf17877079ab72254">Renderer::renderer</a></div><div class="ttdeci">SDL_Renderer * renderer</div><div class="ttdef"><b>Definition:</b> Renderer.h:68</div></div>
+<div class="ttc" id="aclassRenderer_html_a580b08145ef127083406f139b60a2788"><div class="ttname"><a href="classRenderer.html#a580b08145ef127083406f139b60a2788">Renderer::music_chomp</a></div><div class="ttdeci">Mix_Music * music_chomp</div><div class="ttdef"><b>Definition:</b> Renderer.h:73</div></div>
+<div class="ttc" id="aclassRenderer_html_a617f25477eabe8a61c795f24cdd46b2d"><div class="ttname"><a href="classRenderer.html#a617f25477eabe8a61c795f24cdd46b2d">Renderer::loadMusic</a></div><div class="ttdeci">void loadMusic()</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:34</div></div>
+<div class="ttc" id="aclassRenderer_html_a6cb53f6046afd78eafad503d16b0c07b"><div class="ttname"><a href="classRenderer.html#a6cb53f6046afd78eafad503d16b0c07b">Renderer::window</a></div><div class="ttdeci">SDL_Window * window</div><div class="ttdef"><b>Definition:</b> Renderer.h:67</div></div>
+<div class="ttc" id="aclassRenderer_html_a72f4f112af2fb70afebed6fc909963ae"><div class="ttname"><a href="classRenderer.html#a72f4f112af2fb70afebed6fc909963ae">Renderer::surface_bmp</a></div><div class="ttdeci">SDL_Surface * surface_bmp</div><div class="ttdef"><b>Definition:</b> Renderer.h:69</div></div>
+<div class="ttc" id="aclassRenderer_html_a7ebf46f54dab9905f79b80f7fddb76a6"><div class="ttname"><a href="classRenderer.html#a7ebf46f54dab9905f79b80f7fddb76a6">Renderer::Renderer</a></div><div class="ttdeci">Renderer()</div><div class="ttdoc">Construct a new Renderer object.</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:60</div></div>
+<div class="ttc" id="aclassRenderer_html_a89e265e580d083f9f1f58777f4cd4a1e"><div class="ttname"><a href="classRenderer.html#a89e265e580d083f9f1f58777f4cd4a1e">Renderer::drawLives</a></div><div class="ttdeci">void drawLives(int lives)</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:127</div></div>
+<div class="ttc" id="aclassRenderer_html_a8f462c3895ff36a4694c21b4735c8ed0"><div class="ttname"><a href="classRenderer.html#a8f462c3895ff36a4694c21b4735c8ed0">Renderer::animateDeath</a></div><div class="ttdeci">void animateDeath(std::shared_ptr&lt; Pacman &gt; pacman)</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:135</div></div>
+<div class="ttc" id="aclassRenderer_html_a98ebc0e656e993447265f8913a352af5"><div class="ttname"><a href="classRenderer.html#a98ebc0e656e993447265f8913a352af5">Renderer::createWindow</a></div><div class="ttdeci">void createWindow()</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:3</div></div>
+<div class="ttc" id="aclassRenderer_html_abbec8ff9ba100cc41b697dd3a5a9af9f"><div class="ttname"><a href="classRenderer.html#abbec8ff9ba100cc41b697dd3a5a9af9f">Renderer::screenHeight</a></div><div class="ttdeci">int screenHeight</div><div class="ttdef"><b>Definition:</b> Renderer.h:76</div></div>
+<div class="ttc" id="aclassRenderer_html_acd21c43753c8840787285e51f23193c8"><div class="ttname"><a href="classRenderer.html#acd21c43753c8840787285e51f23193c8">Renderer::music_death</a></div><div class="ttdeci">Mix_Music * music_death</div><div class="ttdef"><b>Definition:</b> Renderer.h:72</div></div>
+<div class="ttc" id="aclassRenderer_html_aea9dc9ae27fc18561b60fd229dee66d7"><div class="ttname"><a href="classRenderer.html#aea9dc9ae27fc18561b60fd229dee66d7">Renderer::music_start</a></div><div class="ttdeci">Mix_Music * music_start</div><div class="ttdef"><b>Definition:</b> Renderer.h:71</div></div>
+<div class="ttc" id="aclassRenderer_html_aec5ec57541b6c3f9d9817375ef256f5f"><div class="ttname"><a href="classRenderer.html#aec5ec57541b6c3f9d9817375ef256f5f">Renderer::screenWidth</a></div><div class="ttdeci">int screenWidth</div><div class="ttdef"><b>Definition:</b> Renderer.h:75</div></div>
+<div class="ttc" id="aclassRenderer_html_aefe6c9be3bbb7261623fd45bf9316ab6"><div class="ttname"><a href="classRenderer.html#aefe6c9be3bbb7261623fd45bf9316ab6">Renderer::render</a></div><div class="ttdeci">void render(const Maze &amp;maze, std::shared_ptr&lt; Pacman &gt; pacman, std::vector&lt; std::shared_ptr&lt; Ghosts &gt;&gt; ghosts, int score, int state, int lives)</div><div class="ttdoc">This function renders the game.</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:153</div></div>
+<div class="ttc" id="aclassRenderer_html_af1629566d938eaa883adfa02aa121673"><div class="ttname"><a href="classRenderer.html#af1629566d938eaa883adfa02aa121673">Renderer::drawScore</a></div><div class="ttdeci">void drawScore(int score)</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:100</div></div>
+<div class="ttc" id="aclassRenderer_html_af7936059b0fd1fdf2676de94ad129a64"><div class="ttname"><a href="classRenderer.html#af7936059b0fd1fdf2676de94ad129a64">Renderer::createRenderer</a></div><div class="ttdeci">void createRenderer()</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:12</div></div>
+<div class="ttc" id="aclassRenderer_html_afeee408862d5bd6255a6882d47e6d5cd"><div class="ttname"><a href="classRenderer.html#afeee408862d5bd6255a6882d47e6d5cd">Renderer::~Renderer</a></div><div class="ttdeci">~Renderer()</div><div class="ttdef"><b>Definition:</b> Renderer.cpp:86</div></div>
+<div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

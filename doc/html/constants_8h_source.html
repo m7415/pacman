@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/constants.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">constants.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="constants_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CONSTANTS_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define CONSTANTS_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="constants_8h.html#a7a4127f14f16563da90eb3c836bc404f">   12</a></span>&#160;<span class="preprocessor">#define CELL_SIZE 16</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="constants_8h.html#a798657c39b750020c447b83265adf0f9">   13</a></span>&#160;<span class="preprocessor">#define X_CELLS 28</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="constants_8h.html#a29a3c82e31c51b7b3cc816bb777c7a96">   14</a></span>&#160;<span class="preprocessor">#define Y_CELLS 36</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="constants_8h.html#a499e33de8b8c7531fccbadf182d2d107">   16</a></span>&#160;<span class="preprocessor">#define CELL_CENTER ((CELL_SIZE / 2) + 1)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="constants_8h.html#a2cd109632a6dcccaa80b43561b1ab700">   18</a></span>&#160;<span class="preprocessor">#define SCREEN_WIDTH (X_CELLS * CELL_SIZE)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="constants_8h.html#a6974d08a74da681b3957b2fead2608b8">   19</a></span>&#160;<span class="preprocessor">#define SCREEN_HEIGHT (Y_CELLS * CELL_SIZE)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="constants_8h.html#ac92ca5ab87034a348decad7ee8d4bd1b">   21</a></span>&#160;<span class="preprocessor">#define FPS 60</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="constants_8h.html#acb6a1b30ad00589fae244d33e358f26d">   23</a></span>&#160;<span class="keyword">const</span> SDL_Rect <a class="code" href="constants_8h.html#acb6a1b30ad00589fae244d33e358f26d">SRC_BG</a> = {228, 0, 224, 248};</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="constants_8h.html#aac263382f8d0384d676751ffc2d24afd">   24</a></span>&#160;<span class="keyword">const</span> SDL_Rect <a class="code" href="constants_8h.html#aac263382f8d0384d676751ffc2d24afd">BG</a> = {0, 3 * <a class="code" href="constants_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>, <a class="code" href="constants_8h.html#a798657c39b750020c447b83265adf0f9">X_CELLS</a> *<a class="code" href="constants_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>, (<a class="code" href="constants_8h.html#a29a3c82e31c51b7b3cc816bb777c7a96">Y_CELLS</a> - 5) * <a class="code" href="constants_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="constants_8h.html#a0934e55f807a7a255d9a14e209491e4e">   26</a></span>&#160;<span class="keyword">const</span> SDL_Rect <a class="code" href="constants_8h.html#a0934e55f807a7a255d9a14e209491e4e">SRC_GUM</a> = {8, 8, 8, 8};</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="constants_8h.html#a4d2fed79413bcf041db152bcc3735ecb">   27</a></span>&#160;<span class="keyword">const</span> SDL_Rect <a class="code" href="constants_8h.html#a4d2fed79413bcf041db152bcc3735ecb">SRC_PACGUM</a> = {8, 24, 8, 8};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="constants_8h.html#a0a662770058f59d1cccc737c9c52b446">   29</a></span>&#160;<span class="preprocessor">#define STARTING 0</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="constants_8h.html#a1cab271d33d47905c89d4b7cbb84f505">   30</a></span>&#160;<span class="preprocessor">#define PLAYING 1</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="constants_8h.html#a43105771f16e2da3078149f0de528e9b">   31</a></span>&#160;<span class="preprocessor">#define WIN 2</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="constants_8h.html#af682387a649b2653ad1a41ca5ccad944">   32</a></span>&#160;<span class="preprocessor">#define LOSE 3</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="constants_8h.html#aa71f1218eb9aadc17420151c26ac8f9c">   34</a></span>&#160;<span class="preprocessor">#define GAMEOVER 0</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="constants_8h.html#ab711666ad09d7f6c0b91576525ea158e">   35</a></span>&#160;<span class="preprocessor">#define CONTINUE 1</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="constants_8h.html#a80fb826a684cf3f0d306b22aa100ddac">   37</a></span>&#160;<span class="preprocessor">#define RIGHT 0</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="constants_8h.html#a437ef08681e7210d6678427030446a54">   38</a></span>&#160;<span class="preprocessor">#define LEFT 1</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="constants_8h.html#a1965eaca47dbf3f87acdafc2208f04eb">   39</a></span>&#160;<span class="preprocessor">#define UP 2</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="constants_8h.html#a4193cd1c8c2e6ebd0e056fa2364a663f">   40</a></span>&#160;<span class="preprocessor">#define DOWN 3</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="constants_8h.html#ae19b6bb2940d2fbe0a79852b070eeafd">   41</a></span>&#160;<span class="preprocessor">#define STOP 4</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="constants_8h.html#ad2603e08e2284d835d061e6f2040283f">   43</a></span>&#160;<span class="preprocessor">#define CHASE 0</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="constants_8h.html#a2811f6c090b957083ccbb709a01e60b0">   44</a></span>&#160;<span class="preprocessor">#define SCATTER 1</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="constants_8h.html#a4bc3f9e3107aafe4e162e374cc185b1f">   45</a></span>&#160;<span class="preprocessor">#define FRIGHTENED 2</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="constants_8h.html#a747693fa3a2afc3c58830ae400e5f29f">   46</a></span>&#160;<span class="preprocessor">#define EYES 3</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="constants_8h.html#a2456b3e94b1f698429fb56ffa9befe97">   48</a></span>&#160;<span class="preprocessor">#define GUM 0</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="constants_8h.html#a0c7eee2df9e379311fc3b9c5286d9eb2">   49</a></span>&#160;<span class="preprocessor">#define PACGUM 1</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="constants_8h.html#a107e506d3278d51cd26e6e7d7fb951bc">   50</a></span>&#160;<span class="preprocessor">#define FRUIT 2</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="constants_8h.html#a2dc3870be25a19efa2940150507aaf71">   51</a></span>&#160;<span class="preprocessor">#define UNDEFINED 3</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aconstants_8h_html_a0934e55f807a7a255d9a14e209491e4e"><div class="ttname"><a href="constants_8h.html#a0934e55f807a7a255d9a14e209491e4e">SRC_GUM</a></div><div class="ttdeci">const SDL_Rect SRC_GUM</div><div class="ttdef"><b>Definition:</b> constants.h:26</div></div>
+<div class="ttc" id="aconstants_8h_html_a29a3c82e31c51b7b3cc816bb777c7a96"><div class="ttname"><a href="constants_8h.html#a29a3c82e31c51b7b3cc816bb777c7a96">Y_CELLS</a></div><div class="ttdeci">#define Y_CELLS</div><div class="ttdef"><b>Definition:</b> constants.h:14</div></div>
+<div class="ttc" id="aconstants_8h_html_a4d2fed79413bcf041db152bcc3735ecb"><div class="ttname"><a href="constants_8h.html#a4d2fed79413bcf041db152bcc3735ecb">SRC_PACGUM</a></div><div class="ttdeci">const SDL_Rect SRC_PACGUM</div><div class="ttdef"><b>Definition:</b> constants.h:27</div></div>
+<div class="ttc" id="aconstants_8h_html_a798657c39b750020c447b83265adf0f9"><div class="ttname"><a href="constants_8h.html#a798657c39b750020c447b83265adf0f9">X_CELLS</a></div><div class="ttdeci">#define X_CELLS</div><div class="ttdef"><b>Definition:</b> constants.h:13</div></div>
+<div class="ttc" id="aconstants_8h_html_a7a4127f14f16563da90eb3c836bc404f"><div class="ttname"><a href="constants_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a></div><div class="ttdeci">#define CELL_SIZE</div><div class="ttdoc">Constants used in the game.</div><div class="ttdef"><b>Definition:</b> constants.h:12</div></div>
+<div class="ttc" id="aconstants_8h_html_aac263382f8d0384d676751ffc2d24afd"><div class="ttname"><a href="constants_8h.html#aac263382f8d0384d676751ffc2d24afd">BG</a></div><div class="ttdeci">const SDL_Rect BG</div><div class="ttdef"><b>Definition:</b> constants.h:24</div></div>
+<div class="ttc" id="aconstants_8h_html_acb6a1b30ad00589fae244d33e358f26d"><div class="ttname"><a href="constants_8h.html#acb6a1b30ad00589fae244d33e358f26d">SRC_BG</a></div><div class="ttdeci">const SDL_Rect SRC_BG</div><div class="ttdef"><b>Definition:</b> constants.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classEntity.html" title="Entity class." alt="" coords="5,107,65,133"/>
+<area shape="rect" id="node2" href="$classGhosts.html" title="Ghosts class." alt="" coords="117,81,183,108"/>
+<area shape="rect" id="node7" href="$classPacman.html" title="Pacman class." alt="" coords="113,132,187,159"/>
+<area shape="rect" id="node3" href="$classBlinky.html" title=" " alt="" coords="235,5,297,32"/>
+<area shape="rect" id="node4" href="$classClyde.html" title=" " alt="" coords="237,56,295,83"/>
+<area shape="rect" id="node5" href="$classInky.html" title=" " alt="" coords="241,107,291,133"/>
+<area shape="rect" id="node6" href="$classPinky.html" title=" " alt="" coords="237,157,295,184"/>
+</map>

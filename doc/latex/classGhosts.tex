@@ -1,0 +1,300 @@
+\hypertarget{classGhosts}{}\doxysection{Référence de la classe Ghosts}
+\label{classGhosts}\index{Ghosts@{Ghosts}}
+
+
+\mbox{\hyperlink{classGhosts}{Ghosts}} class.  
+
+
+
+
+{\ttfamily \#include $<$Ghosts.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Ghosts\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classGhosts__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Ghosts\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classGhosts__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGhosts_af489229514a4a1b2bfdb36bd5111af7c}{Ghosts}} (float \mbox{\hyperlink{classEntity_abc2d19ee6ff26b8520428894da6a8f68}{x}}, float \mbox{\hyperlink{classEntity_af4966f81d91cc8f8d5eb9e9002240c49}{y}}, int \mbox{\hyperlink{classEntity_a8b23bd918644de44e25a7f08ed55d1e2}{direction}}, \mbox{\hyperlink{structTile}{Tile}} target, int \mbox{\hyperlink{classGhosts_aef0cd62095ba5a6aa45a3969f286e659}{dot\+Counter}})
+\item 
+\mbox{\hyperlink{classGhosts_a9de33d2ba1acf7facca912fc69fd004f}{$\sim$\+Ghosts}} ()
+\item 
+void \mbox{\hyperlink{classGhosts_aa955dd2aa90864bf812195fabcd5d5cd}{move}} (int pacmanX, int pacmanY, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$ dest, int dot\+Eaten)
+\begin{DoxyCompactList}\small\item\em move the ghost \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGhosts_acf074084f4370c079e8a8ada0f0bc353}{render}} (int frame, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em render the ghost \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$ \mbox{\hyperlink{classGhosts_a638041597fb24d0faab9d1453013b7fb}{get\+Destination}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classGhosts_a16c2953056f8975f36fc3ee63200ad7c}{set\+Destination}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$ dest)=0
+\item 
+void \mbox{\hyperlink{classGhosts_a2b78cf05dc43e84bddc2b6017725ec11}{set\+Mode}} (int \mbox{\hyperlink{classGhosts_a5a302ed5d0e444d508d516f90a895fd7}{mode}})
+\item 
+int \mbox{\hyperlink{classGhosts_a4b097f032b64e0602e8e21463e4b9d91}{get\+Mode}} ()
+\item 
+virtual \mbox{\hyperlink{structTile}{Tile}} \mbox{\hyperlink{classGhosts_a0fd14e8674efd24ed3ffe7e746f9e25a}{get\+Orig}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classGhosts_a6e9191c8bab34b9516fc16b44617b50a}{get\+Sprite}} (int frame, int \mbox{\hyperlink{classEntity_a8b23bd918644de44e25a7f08ed55d1e2}{direction}})
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$ \mbox{\hyperlink{classGhosts_a0f0af108c5f7844ffe7738db406a3576}{make\+Turn}} (int pacmanX, int pacmanY, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$ dest)
+\begin{DoxyCompactList}\small\item\em return the next intersection \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{structTile}{Tile}} \mbox{\hyperlink{classGhosts_a1389ce7e21124932086715292a902f01}{get\+Goal\+Tile}} (int pacmanX, int pacmanY)=0
+\item 
+int \mbox{\hyperlink{classGhosts_ac68c9e83700a82ee8ebaa4f8aaa2f25c}{opposite\+Direction}} (int \mbox{\hyperlink{classEntity_a8b23bd918644de44e25a7f08ed55d1e2}{direction}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ SDL\+\_\+\+Rect $>$ \mbox{\hyperlink{classGhosts_a9a7a94493a862c879f4d0458435f970d}{sprites}}
+\item 
+int \mbox{\hyperlink{classGhosts_a5a302ed5d0e444d508d516f90a895fd7}{mode}} = \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}
+\item 
+int \mbox{\hyperlink{classGhosts_a1a5abcef3c694e34a78c495b7b28568f}{previous\+Mode}} = \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}
+\item 
+\mbox{\hyperlink{structTile}{Tile}} \mbox{\hyperlink{classGhosts_a3c55084c81d3cc34f965a8ecfe3ce13f}{scatter\+Target}}
+\item 
+std\+::mt19937 \mbox{\hyperlink{classGhosts_a24cf10993afdef0b67811e0a0fc6e215}{rng}}
+\item 
+Uint32 \mbox{\hyperlink{classGhosts_acaf9af6ffc1ba3f22b17fa66e5f96ca4}{mode\+Timer}} = 0
+\item 
+int \mbox{\hyperlink{classGhosts_aef0cd62095ba5a6aa45a3969f286e659}{dot\+Counter}}
+\item 
+bool \mbox{\hyperlink{classGhosts_a68ef54054eb2004e6cd7262cc7597fc9}{is\+Free}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{classGhosts}{Ghosts}} class. 
+
+this class is used to store the ghosts. It is an abstract class. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGhosts_af489229514a4a1b2bfdb36bd5111af7c}\label{classGhosts_af489229514a4a1b2bfdb36bd5111af7c}} 
+\index{Ghosts@{Ghosts}!Ghosts@{Ghosts}}
+\index{Ghosts@{Ghosts}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{Ghosts()}{Ghosts()}}
+{\footnotesize\ttfamily Ghosts\+::\+Ghosts (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{direction,  }\item[{\mbox{\hyperlink{structTile}{Tile}}}]{target,  }\item[{int}]{dot\+Counter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGhosts_a9de33d2ba1acf7facca912fc69fd004f}\label{classGhosts_a9de33d2ba1acf7facca912fc69fd004f}} 
+\index{Ghosts@{Ghosts}!````~Ghosts@{$\sim$Ghosts}}
+\index{````~Ghosts@{$\sim$Ghosts}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ghosts()}{~Ghosts()}}
+{\footnotesize\ttfamily Ghosts\+::$\sim$\+Ghosts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGhosts_a638041597fb24d0faab9d1453013b7fb}\label{classGhosts_a638041597fb24d0faab9d1453013b7fb}} 
+\index{Ghosts@{Ghosts}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classIntersection}{Intersection}}$>$ Ghosts\+::get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{classPinky_a4bf41cdcd14da2c69ceae6c018695a50}{Pinky}}, \mbox{\hyperlink{classInky_aa7ed33e68190f44d612b8bb2f5110bf1}{Inky}}, \mbox{\hyperlink{classClyde_a0847c31c5ea52f1f48c1b94ad7bad4aa}{Clyde}}, et \mbox{\hyperlink{classBlinky_a1664873670d77f3ebc9acae21dd41259}{Blinky}}.
+
+\mbox{\Hypertarget{classGhosts_a1389ce7e21124932086715292a902f01}\label{classGhosts_a1389ce7e21124932086715292a902f01}} 
+\index{Ghosts@{Ghosts}!getGoalTile@{getGoalTile}}
+\index{getGoalTile@{getGoalTile}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{getGoalTile()}{getGoalTile()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structTile}{Tile}} Ghosts\+::get\+Goal\+Tile (\begin{DoxyParamCaption}\item[{int}]{pacmanX,  }\item[{int}]{pacmanY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{classPinky_af52de9c4246e7676eb89b94340ee3345}{Pinky}}, \mbox{\hyperlink{classInky_ac185420cd042deaff73f71ed41459757}{Inky}}, \mbox{\hyperlink{classClyde_a28f6e0c13c270afd958b0269b9111e09}{Clyde}}, et \mbox{\hyperlink{classBlinky_a35ab99df7484b02c6cd6fa0fb456e2b6}{Blinky}}.
+
+\mbox{\Hypertarget{classGhosts_a4b097f032b64e0602e8e21463e4b9d91}\label{classGhosts_a4b097f032b64e0602e8e21463e4b9d91}} 
+\index{Ghosts@{Ghosts}!getMode@{getMode}}
+\index{getMode@{getMode}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily int Ghosts\+::get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGhosts_a0fd14e8674efd24ed3ffe7e746f9e25a}\label{classGhosts_a0fd14e8674efd24ed3ffe7e746f9e25a}} 
+\index{Ghosts@{Ghosts}!getOrig@{getOrig}}
+\index{getOrig@{getOrig}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{getOrig()}{getOrig()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structTile}{Tile}} Ghosts\+::get\+Orig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{classPinky_a3d5f098308837d33a5f41e916c1dbc01}{Pinky}}, \mbox{\hyperlink{classInky_a4e074ee977edefd36a705bffbe8b6095}{Inky}}, \mbox{\hyperlink{classClyde_a82f2b8887e06b8eb7235cc76cfb7f761}{Clyde}}, et \mbox{\hyperlink{classBlinky_a50dc3209e5f990a05cb0e2eb83def52e}{Blinky}}.
+
+\mbox{\Hypertarget{classGhosts_a6e9191c8bab34b9516fc16b44617b50a}\label{classGhosts_a6e9191c8bab34b9516fc16b44617b50a}} 
+\index{Ghosts@{Ghosts}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Ghosts\+::get\+Sprite (\begin{DoxyParamCaption}\item[{int}]{frame,  }\item[{int}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classEntity_a7b43204dbec3d724a4833162c9a70b18}{Entity}}.
+
+\mbox{\Hypertarget{classGhosts_a0f0af108c5f7844ffe7738db406a3576}\label{classGhosts_a0f0af108c5f7844ffe7738db406a3576}} 
+\index{Ghosts@{Ghosts}!makeTurn@{makeTurn}}
+\index{makeTurn@{makeTurn}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{makeTurn()}{makeTurn()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$ Ghosts\+::make\+Turn (\begin{DoxyParamCaption}\item[{int}]{pacmanX,  }\item[{int}]{pacmanY,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+return the next intersection 
+
+this method is used to return the next intersection. It also updates the coordinates of the ghost. It calls the get\+Goal\+Tile method to get the goal tile of the ghost. The behaviour of the ghost depends on the mode it is in. 
+\begin{DoxyParams}{Paramètres}
+{\em pacmanX} & \\
+\hline
+{\em pacmanY} & \\
+\hline
+{\em dest} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+std\+::shared\+\_\+ptr$<$\+Intersection$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGhosts_aa955dd2aa90864bf812195fabcd5d5cd}\label{classGhosts_aa955dd2aa90864bf812195fabcd5d5cd}} 
+\index{Ghosts@{Ghosts}!move@{move}}
+\index{move@{move}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Ghosts\+::move (\begin{DoxyParamCaption}\item[{int}]{pacmanX,  }\item[{int}]{pacmanY,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$}]{dest,  }\item[{int}]{dot\+Eaten }\end{DoxyParamCaption})}
+
+
+
+move the ghost 
+
+this method is used to move the ghost. It calls the make\+Turn method to make the ghost turn at an intersection.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pacmanX} & \\
+\hline
+{\em pacmanY} & \\
+\hline
+{\em dest} & \\
+\hline
+{\em dot\+Eaten} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGhosts_ac68c9e83700a82ee8ebaa4f8aaa2f25c}\label{classGhosts_ac68c9e83700a82ee8ebaa4f8aaa2f25c}} 
+\index{Ghosts@{Ghosts}!oppositeDirection@{oppositeDirection}}
+\index{oppositeDirection@{oppositeDirection}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{oppositeDirection()}{oppositeDirection()}}
+{\footnotesize\ttfamily int Ghosts\+::opposite\+Direction (\begin{DoxyParamCaption}\item[{int}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_acf074084f4370c079e8a8ada0f0bc353}\label{classGhosts_acf074084f4370c079e8a8ada0f0bc353}} 
+\index{Ghosts@{Ghosts}!render@{render}}
+\index{render@{render}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Ghosts\+::render (\begin{DoxyParamCaption}\item[{int}]{frame,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Texture $\ast$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+render the ghost 
+
+this method is used to render the ghost. It calls the get\+Sprite method to get the correct sprite for the ghost.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em frame} & \\
+\hline
+{\em renderer} & \\
+\hline
+{\em texture} & \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \mbox{\hyperlink{classEntity_a6f2db49ab57bbc7a04f000b2d2ebcda4}{Entity}}.
+
+\mbox{\Hypertarget{classGhosts_a16c2953056f8975f36fc3ee63200ad7c}\label{classGhosts_a16c2953056f8975f36fc3ee63200ad7c}} 
+\index{Ghosts@{Ghosts}!setDestination@{setDestination}}
+\index{setDestination@{setDestination}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{setDestination()}{setDestination()}}
+{\footnotesize\ttfamily virtual void Ghosts\+::set\+Destination (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $>$}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{classPinky_a4b398a57cfd72d6bf17a1a0c5fecb525}{Pinky}}, \mbox{\hyperlink{classInky_a3474dd16ad3db9844ac69c723f601e29}{Inky}}, \mbox{\hyperlink{classClyde_af6c5e1ab0c43855280a40db236a849fa}{Clyde}}, et \mbox{\hyperlink{classBlinky_ad2dc6a1841e547896e3224095112bb2b}{Blinky}}.
+
+\mbox{\Hypertarget{classGhosts_a2b78cf05dc43e84bddc2b6017725ec11}\label{classGhosts_a2b78cf05dc43e84bddc2b6017725ec11}} 
+\index{Ghosts@{Ghosts}!setMode@{setMode}}
+\index{setMode@{setMode}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily void Ghosts\+::set\+Mode (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classGhosts_aef0cd62095ba5a6aa45a3969f286e659}\label{classGhosts_aef0cd62095ba5a6aa45a3969f286e659}} 
+\index{Ghosts@{Ghosts}!dotCounter@{dotCounter}}
+\index{dotCounter@{dotCounter}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{dotCounter}{dotCounter}}
+{\footnotesize\ttfamily int Ghosts\+::dot\+Counter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_a68ef54054eb2004e6cd7262cc7597fc9}\label{classGhosts_a68ef54054eb2004e6cd7262cc7597fc9}} 
+\index{Ghosts@{Ghosts}!isFree@{isFree}}
+\index{isFree@{isFree}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{isFree}{isFree}}
+{\footnotesize\ttfamily bool Ghosts\+::is\+Free = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_a5a302ed5d0e444d508d516f90a895fd7}\label{classGhosts_a5a302ed5d0e444d508d516f90a895fd7}} 
+\index{Ghosts@{Ghosts}!mode@{mode}}
+\index{mode@{mode}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily int Ghosts\+::mode = \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_acaf9af6ffc1ba3f22b17fa66e5f96ca4}\label{classGhosts_acaf9af6ffc1ba3f22b17fa66e5f96ca4}} 
+\index{Ghosts@{Ghosts}!modeTimer@{modeTimer}}
+\index{modeTimer@{modeTimer}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{modeTimer}{modeTimer}}
+{\footnotesize\ttfamily Uint32 Ghosts\+::mode\+Timer = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_a1a5abcef3c694e34a78c495b7b28568f}\label{classGhosts_a1a5abcef3c694e34a78c495b7b28568f}} 
+\index{Ghosts@{Ghosts}!previousMode@{previousMode}}
+\index{previousMode@{previousMode}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{previousMode}{previousMode}}
+{\footnotesize\ttfamily int Ghosts\+::previous\+Mode = \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_a24cf10993afdef0b67811e0a0fc6e215}\label{classGhosts_a24cf10993afdef0b67811e0a0fc6e215}} 
+\index{Ghosts@{Ghosts}!rng@{rng}}
+\index{rng@{rng}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{rng}{rng}}
+{\footnotesize\ttfamily std\+::mt19937 Ghosts\+::rng\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_a3c55084c81d3cc34f965a8ecfe3ce13f}\label{classGhosts_a3c55084c81d3cc34f965a8ecfe3ce13f}} 
+\index{Ghosts@{Ghosts}!scatterTarget@{scatterTarget}}
+\index{scatterTarget@{scatterTarget}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{scatterTarget}{scatterTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTile}{Tile}} Ghosts\+::scatter\+Target\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGhosts_a9a7a94493a862c879f4d0458435f970d}\label{classGhosts_a9a7a94493a862c879f4d0458435f970d}} 
+\index{Ghosts@{Ghosts}!sprites@{sprites}}
+\index{sprites@{sprites}!Ghosts@{Ghosts}}
+\doxysubsubsection{\texorpdfstring{sprites}{sprites}}
+{\footnotesize\ttfamily std\+::vector$<$SDL\+\_\+\+Rect$>$ Ghosts\+::sprites\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Ghosts_8h}{Ghosts.\+h}}\item 
+src/\mbox{\hyperlink{Ghosts_8cpp}{Ghosts.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,244 @@
+\hypertarget{classGame}{}\doxysection{Référence de la classe Game}
+\label{classGame}\index{Game@{Game}}
+
+
+\mbox{\hyperlink{classGame}{Game}} class.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Graphe de collaboration de Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGame}{Game}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\item 
+int \mbox{\hyperlink{classGame_a442a4960b4716fd25e7efd1e01be974e}{update}} (int state)
+\begin{DoxyCompactList}\small\item\em This function updates the game state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a18e1a71058dd53f9aa1b4cbc950ab6b1}{set\+Player\+Direction}} (int d)
+\begin{DoxyCompactList}\small\item\em Set the player direction. This function is called when the user presses a key. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGame_af88d351142dec622156f1348c918236d}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset the game to a starting state, called when the player loses a life \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGame_a3aa8a587bc01b021874667ba9b2080e9}{handle\+Pacgums}} ()
+\item 
+int \mbox{\hyperlink{classGame_a91999ea50e301541f09dc15ed0a3503a}{handle\+Ghosts}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGame_acc06a8226a40efbb5069c0068e87e553}{player\+Direction}} = \mbox{\hyperlink{constants_8h_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}
+\item 
+\mbox{\hyperlink{classMaze}{Maze}} \mbox{\hyperlink{classGame_a84537a826d7cd2a5bee86f30a3dcd78d}{maze}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ \mbox{\hyperlink{classGame_a937682b25ced87889bb58a75ccfdfb52}{pacman}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGhosts}{Ghosts}} $>$ $>$ \mbox{\hyperlink{classGame_ab647d2b88dc5ba8cb939461783470882}{ghosts}}
+\item 
+int \mbox{\hyperlink{classGame_afaf9404196df9968103d5b0d0ad08139}{score}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classRenderer}{Renderer}} $>$ \mbox{\hyperlink{classGame_ad3a5800e2b0a07c956eda728a9d8ba3c}{renderer}}
+\item 
+int \mbox{\hyperlink{classGame_ac9c5860abbe56dcdf826dc9716073135}{nb\+\_\+gommes}} = 244
+\item 
+int \mbox{\hyperlink{classGame_aa65dc796ac407c6e5ffaab155530c90a}{lives}}
+\item 
+Uint32 \mbox{\hyperlink{classGame_a84036c930ae939dcfd025457892f6362}{last\+\_\+gum\+\_\+eaten}} = 0
+\item 
+int \mbox{\hyperlink{classGame_abe14118bc7cb70c342636c2b2a15554b}{level}} = 1
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classGame_ad3899c2dd11375cfe77be9a73128e78f}{mode\+\_\+times}} = \{7000, 27000, 34000, 54000, 59000, 79000, 84000\}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classGame_a9448565d800407219a28d0edaafbf1a3}{modes}} = \{\mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}, \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}, \mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}, \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}, \mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}, \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}, \mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}\}
+\item 
+Uint32 \mbox{\hyperlink{classGame_a9a93b2c177f2a66628261c7bb810afef}{game\+\_\+start}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{classGame}{Game}} class. 
+
+This class is the main class of the game. It contains all the game logic. It is responsible for updating the game state and rendering the game. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classGame}{Game}} object. 
+
+This constructor initializes the game by creating the maze, the pacman and the ghosts. It also initializes the renderer. \mbox{\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGame_a91999ea50e301541f09dc15ed0a3503a}\label{classGame_a91999ea50e301541f09dc15ed0a3503a}} 
+\index{Game@{Game}!handleGhosts@{handleGhosts}}
+\index{handleGhosts@{handleGhosts}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handleGhosts()}{handleGhosts()}}
+{\footnotesize\ttfamily int Game\+::handle\+Ghosts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a3aa8a587bc01b021874667ba9b2080e9}\label{classGame_a3aa8a587bc01b021874667ba9b2080e9}} 
+\index{Game@{Game}!handlePacgums@{handlePacgums}}
+\index{handlePacgums@{handlePacgums}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handlePacgums()}{handlePacgums()}}
+{\footnotesize\ttfamily void Game\+::handle\+Pacgums (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_af88d351142dec622156f1348c918236d}\label{classGame_af88d351142dec622156f1348c918236d}} 
+\index{Game@{Game}!reset@{reset}}
+\index{reset@{reset}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily int Game\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset the game to a starting state, called when the player loses a life 
+
+\begin{DoxyReturn}{Renvoie}
+int The new state of the game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a18e1a71058dd53f9aa1b4cbc950ab6b1}\label{classGame_a18e1a71058dd53f9aa1b4cbc950ab6b1}} 
+\index{Game@{Game}!setPlayerDirection@{setPlayerDirection}}
+\index{setPlayerDirection@{setPlayerDirection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setPlayerDirection()}{setPlayerDirection()}}
+{\footnotesize\ttfamily void Game\+::set\+Player\+Direction (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+Set the player direction. This function is called when the user presses a key. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em d} & The direction of the player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a442a4960b4716fd25e7efd1e01be974e}\label{classGame_a442a4960b4716fd25e7efd1e01be974e}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily int Game\+::update (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})}
+
+
+
+This function updates the game state. 
+
+This function updates the game state by updating the pacman and the ghosts. It also handles the collisions between the pacman and the ghosts.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em state} & The current state of the game (STARTING, PLAYING, GAMEOVER, WON)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int The new state of the game 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classGame_a9a93b2c177f2a66628261c7bb810afef}\label{classGame_a9a93b2c177f2a66628261c7bb810afef}} 
+\index{Game@{Game}!game\_start@{game\_start}}
+\index{game\_start@{game\_start}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{game\_start}{game\_start}}
+{\footnotesize\ttfamily Uint32 Game\+::game\+\_\+start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_ab647d2b88dc5ba8cb939461783470882}\label{classGame_ab647d2b88dc5ba8cb939461783470882}} 
+\index{Game@{Game}!ghosts@{ghosts}}
+\index{ghosts@{ghosts}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ghosts}{ghosts}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGhosts}{Ghosts}}$>$ $>$ Game\+::ghosts\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a84036c930ae939dcfd025457892f6362}\label{classGame_a84036c930ae939dcfd025457892f6362}} 
+\index{Game@{Game}!last\_gum\_eaten@{last\_gum\_eaten}}
+\index{last\_gum\_eaten@{last\_gum\_eaten}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{last\_gum\_eaten}{last\_gum\_eaten}}
+{\footnotesize\ttfamily Uint32 Game\+::last\+\_\+gum\+\_\+eaten = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_abe14118bc7cb70c342636c2b2a15554b}\label{classGame_abe14118bc7cb70c342636c2b2a15554b}} 
+\index{Game@{Game}!level@{level}}
+\index{level@{level}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Game\+::level = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_aa65dc796ac407c6e5ffaab155530c90a}\label{classGame_aa65dc796ac407c6e5ffaab155530c90a}} 
+\index{Game@{Game}!lives@{lives}}
+\index{lives@{lives}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily int Game\+::lives\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a84537a826d7cd2a5bee86f30a3dcd78d}\label{classGame_a84537a826d7cd2a5bee86f30a3dcd78d}} 
+\index{Game@{Game}!maze@{maze}}
+\index{maze@{maze}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{maze}{maze}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMaze}{Maze}} Game\+::maze\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_ad3899c2dd11375cfe77be9a73128e78f}\label{classGame_ad3899c2dd11375cfe77be9a73128e78f}} 
+\index{Game@{Game}!mode\_times@{mode\_times}}
+\index{mode\_times@{mode\_times}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mode\_times}{mode\_times}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Game\+::mode\+\_\+times = \{7000, 27000, 34000, 54000, 59000, 79000, 84000\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a9448565d800407219a28d0edaafbf1a3}\label{classGame_a9448565d800407219a28d0edaafbf1a3}} 
+\index{Game@{Game}!modes@{modes}}
+\index{modes@{modes}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{modes}{modes}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Game\+::modes = \{\mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}, \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}, \mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}, \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}, \mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}, \mbox{\hyperlink{constants_8h_a2811f6c090b957083ccbb709a01e60b0}{SCATTER}}, \mbox{\hyperlink{constants_8h_ad2603e08e2284d835d061e6f2040283f}{CHASE}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_ac9c5860abbe56dcdf826dc9716073135}\label{classGame_ac9c5860abbe56dcdf826dc9716073135}} 
+\index{Game@{Game}!nb\_gommes@{nb\_gommes}}
+\index{nb\_gommes@{nb\_gommes}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{nb\_gommes}{nb\_gommes}}
+{\footnotesize\ttfamily int Game\+::nb\+\_\+gommes = 244\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a937682b25ced87889bb58a75ccfdfb52}\label{classGame_a937682b25ced87889bb58a75ccfdfb52}} 
+\index{Game@{Game}!pacman@{pacman}}
+\index{pacman@{pacman}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{pacman}{pacman}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classPacman}{Pacman}}$>$ Game\+::pacman\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_acc06a8226a40efbb5069c0068e87e553}\label{classGame_acc06a8226a40efbb5069c0068e87e553}} 
+\index{Game@{Game}!playerDirection@{playerDirection}}
+\index{playerDirection@{playerDirection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{playerDirection}{playerDirection}}
+{\footnotesize\ttfamily int Game\+::player\+Direction = \mbox{\hyperlink{constants_8h_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_ad3a5800e2b0a07c956eda728a9d8ba3c}\label{classGame_ad3a5800e2b0a07c956eda728a9d8ba3c}} 
+\index{Game@{Game}!renderer@{renderer}}
+\index{renderer@{renderer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classRenderer}{Renderer}}$>$ Game\+::renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_afaf9404196df9968103d5b0d0ad08139}\label{classGame_afaf9404196df9968103d5b0d0ad08139}} 
+\index{Game@{Game}!score@{score}}
+\index{score@{score}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Game\+::score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Game_8h}{Game.\+h}}\item 
+src/\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

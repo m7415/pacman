@@ -1,0 +1,237 @@
+\hypertarget{classRenderer}{}\doxysection{Référence de la classe Renderer}
+\label{classRenderer}\index{Renderer@{Renderer}}
+
+
+The \mbox{\hyperlink{classRenderer}{Renderer}} class.  
+
+
+
+
+{\ttfamily \#include $<$Renderer.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRenderer_a7ebf46f54dab9905f79b80f7fddb76a6}{Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classRenderer}{Renderer}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRenderer_afeee408862d5bd6255a6882d47e6d5cd}{$\sim$\+Renderer}} ()
+\item 
+void \mbox{\hyperlink{classRenderer_aefe6c9be3bbb7261623fd45bf9316ab6}{render}} (const \mbox{\hyperlink{classMaze}{Maze}} \&maze, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ pacman, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGhosts}{Ghosts}} $>$$>$ ghosts, int score, int state, int lives)
+\begin{DoxyCompactList}\small\item\em This function renders the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRenderer_a3a515f7ae40af4bd2062a1e554c9d18f}{update\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em This function updates the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRenderer_a98ebc0e656e993447265f8913a352af5}{create\+Window}} ()
+\item 
+void \mbox{\hyperlink{classRenderer_af7936059b0fd1fdf2676de94ad129a64}{create\+Renderer}} ()
+\item 
+void \mbox{\hyperlink{classRenderer_a382fec24e17d31a08aaebb163357e3e9}{load\+Resources}} ()
+\item 
+void \mbox{\hyperlink{classRenderer_a617f25477eabe8a61c795f24cdd46b2d}{load\+Music}} ()
+\item 
+void \mbox{\hyperlink{classRenderer_af1629566d938eaa883adfa02aa121673}{draw\+Score}} (int score)
+\item 
+void \mbox{\hyperlink{classRenderer_a89e265e580d083f9f1f58777f4cd4a1e}{draw\+Lives}} (int lives)
+\item 
+void \mbox{\hyperlink{classRenderer_a8f462c3895ff36a4694c21b4735c8ed0}{animate\+Death}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$ pacman)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{classRenderer_a6cb53f6046afd78eafad503d16b0c07b}{window}} = nullptr
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classRenderer_a4a9e4d101b69f92bf17877079ab72254}{renderer}} = nullptr
+\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classRenderer_a72f4f112af2fb70afebed6fc909963ae}{surface\+\_\+bmp}} = nullptr
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classRenderer_a1131f9a9c3e92d1d6b5581652253a86a}{texture\+\_\+bmp}} = nullptr
+\item 
+Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{classRenderer_aea9dc9ae27fc18561b60fd229dee66d7}{music\+\_\+start}} = nullptr
+\item 
+Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{classRenderer_acd21c43753c8840787285e51f23193c8}{music\+\_\+death}} = nullptr
+\item 
+Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{classRenderer_a580b08145ef127083406f139b60a2788}{music\+\_\+chomp}} = nullptr
+\item 
+int \mbox{\hyperlink{classRenderer_aec5ec57541b6c3f9d9817375ef256f5f}{screen\+Width}}
+\item 
+int \mbox{\hyperlink{classRenderer_abbec8ff9ba100cc41b697dd3a5a9af9f}{screen\+Height}}
+\item 
+int \mbox{\hyperlink{classRenderer_a0a10acb86a10156c2aa2dc8fa5fdbac8}{frame}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+The \mbox{\hyperlink{classRenderer}{Renderer}} class. 
+
+This class is responsible for rendering the game. It contains all the functions related to rendering the game and the game elements. It also contains the functions related to loading the resources. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classRenderer_a7ebf46f54dab9905f79b80f7fddb76a6}\label{classRenderer_a7ebf46f54dab9905f79b80f7fddb76a6}} 
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{Renderer()}{Renderer()}}
+{\footnotesize\ttfamily Renderer\+::\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classRenderer}{Renderer}} object. 
+
+This constructor initializes the renderer by creating the window and the renderer. It also loads the resources, and initializes the SDL, SDL\+\_\+ttf and SDL\+\_\+mixer libraries. \mbox{\Hypertarget{classRenderer_afeee408862d5bd6255a6882d47e6d5cd}\label{classRenderer_afeee408862d5bd6255a6882d47e6d5cd}} 
+\index{Renderer@{Renderer}!````~Renderer@{$\sim$Renderer}}
+\index{````~Renderer@{$\sim$Renderer}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Renderer()}{~Renderer()}}
+{\footnotesize\ttfamily Renderer\+::$\sim$\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classRenderer_a8f462c3895ff36a4694c21b4735c8ed0}\label{classRenderer_a8f462c3895ff36a4694c21b4735c8ed0}} 
+\index{Renderer@{Renderer}!animateDeath@{animateDeath}}
+\index{animateDeath@{animateDeath}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{animateDeath()}{animateDeath()}}
+{\footnotesize\ttfamily void Renderer\+::animate\+Death (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$}]{pacman }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_af7936059b0fd1fdf2676de94ad129a64}\label{classRenderer_af7936059b0fd1fdf2676de94ad129a64}} 
+\index{Renderer@{Renderer}!createRenderer@{createRenderer}}
+\index{createRenderer@{createRenderer}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{createRenderer()}{createRenderer()}}
+{\footnotesize\ttfamily void Renderer\+::create\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a98ebc0e656e993447265f8913a352af5}\label{classRenderer_a98ebc0e656e993447265f8913a352af5}} 
+\index{Renderer@{Renderer}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily void Renderer\+::create\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a89e265e580d083f9f1f58777f4cd4a1e}\label{classRenderer_a89e265e580d083f9f1f58777f4cd4a1e}} 
+\index{Renderer@{Renderer}!drawLives@{drawLives}}
+\index{drawLives@{drawLives}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{drawLives()}{drawLives()}}
+{\footnotesize\ttfamily void Renderer\+::draw\+Lives (\begin{DoxyParamCaption}\item[{int}]{lives }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_af1629566d938eaa883adfa02aa121673}\label{classRenderer_af1629566d938eaa883adfa02aa121673}} 
+\index{Renderer@{Renderer}!drawScore@{drawScore}}
+\index{drawScore@{drawScore}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{drawScore()}{drawScore()}}
+{\footnotesize\ttfamily void Renderer\+::draw\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a617f25477eabe8a61c795f24cdd46b2d}\label{classRenderer_a617f25477eabe8a61c795f24cdd46b2d}} 
+\index{Renderer@{Renderer}!loadMusic@{loadMusic}}
+\index{loadMusic@{loadMusic}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{loadMusic()}{loadMusic()}}
+{\footnotesize\ttfamily void Renderer\+::load\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a382fec24e17d31a08aaebb163357e3e9}\label{classRenderer_a382fec24e17d31a08aaebb163357e3e9}} 
+\index{Renderer@{Renderer}!loadResources@{loadResources}}
+\index{loadResources@{loadResources}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{loadResources()}{loadResources()}}
+{\footnotesize\ttfamily void Renderer\+::load\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_aefe6c9be3bbb7261623fd45bf9316ab6}\label{classRenderer_aefe6c9be3bbb7261623fd45bf9316ab6}} 
+\index{Renderer@{Renderer}!render@{render}}
+\index{render@{render}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Renderer\+::render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMaze}{Maze}} \&}]{maze,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPacman}{Pacman}} $>$}]{pacman,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGhosts}{Ghosts}} $>$$>$}]{ghosts,  }\item[{int}]{score,  }\item[{int}]{state,  }\item[{int}]{lives }\end{DoxyParamCaption})}
+
+
+
+This function renders the game. 
+
+This function renders the game by rendering the maze, the pacman, the ghosts, the score and the lives.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em maze} & \\
+\hline
+{\em pacman} & \\
+\hline
+{\em ghosts} & \\
+\hline
+{\em score} & \\
+\hline
+{\em state} & \\
+\hline
+{\em lives} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRenderer_a3a515f7ae40af4bd2062a1e554c9d18f}\label{classRenderer_a3a515f7ae40af4bd2062a1e554c9d18f}} 
+\index{Renderer@{Renderer}!updateScreen@{updateScreen}}
+\index{updateScreen@{updateScreen}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{updateScreen()}{updateScreen()}}
+{\footnotesize\ttfamily void Renderer\+::update\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function updates the screen. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classRenderer_a0a10acb86a10156c2aa2dc8fa5fdbac8}\label{classRenderer_a0a10acb86a10156c2aa2dc8fa5fdbac8}} 
+\index{Renderer@{Renderer}!frame@{frame}}
+\index{frame@{frame}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily int Renderer\+::frame = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a580b08145ef127083406f139b60a2788}\label{classRenderer_a580b08145ef127083406f139b60a2788}} 
+\index{Renderer@{Renderer}!music\_chomp@{music\_chomp}}
+\index{music\_chomp@{music\_chomp}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{music\_chomp}{music\_chomp}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ Renderer\+::music\+\_\+chomp = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_acd21c43753c8840787285e51f23193c8}\label{classRenderer_acd21c43753c8840787285e51f23193c8}} 
+\index{Renderer@{Renderer}!music\_death@{music\_death}}
+\index{music\_death@{music\_death}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{music\_death}{music\_death}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ Renderer\+::music\+\_\+death = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_aea9dc9ae27fc18561b60fd229dee66d7}\label{classRenderer_aea9dc9ae27fc18561b60fd229dee66d7}} 
+\index{Renderer@{Renderer}!music\_start@{music\_start}}
+\index{music\_start@{music\_start}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{music\_start}{music\_start}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ Renderer\+::music\+\_\+start = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a4a9e4d101b69f92bf17877079ab72254}\label{classRenderer_a4a9e4d101b69f92bf17877079ab72254}} 
+\index{Renderer@{Renderer}!renderer@{renderer}}
+\index{renderer@{renderer}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ Renderer\+::renderer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_abbec8ff9ba100cc41b697dd3a5a9af9f}\label{classRenderer_abbec8ff9ba100cc41b697dd3a5a9af9f}} 
+\index{Renderer@{Renderer}!screenHeight@{screenHeight}}
+\index{screenHeight@{screenHeight}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{screenHeight}{screenHeight}}
+{\footnotesize\ttfamily int Renderer\+::screen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_aec5ec57541b6c3f9d9817375ef256f5f}\label{classRenderer_aec5ec57541b6c3f9d9817375ef256f5f}} 
+\index{Renderer@{Renderer}!screenWidth@{screenWidth}}
+\index{screenWidth@{screenWidth}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{screenWidth}{screenWidth}}
+{\footnotesize\ttfamily int Renderer\+::screen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a72f4f112af2fb70afebed6fc909963ae}\label{classRenderer_a72f4f112af2fb70afebed6fc909963ae}} 
+\index{Renderer@{Renderer}!surface\_bmp@{surface\_bmp}}
+\index{surface\_bmp@{surface\_bmp}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{surface\_bmp}{surface\_bmp}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface$\ast$ Renderer\+::surface\+\_\+bmp = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a1131f9a9c3e92d1d6b5581652253a86a}\label{classRenderer_a1131f9a9c3e92d1d6b5581652253a86a}} 
+\index{Renderer@{Renderer}!texture\_bmp@{texture\_bmp}}
+\index{texture\_bmp@{texture\_bmp}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{texture\_bmp}{texture\_bmp}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Renderer\+::texture\+\_\+bmp = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderer_a6cb53f6046afd78eafad503d16b0c07b}\label{classRenderer_a6cb53f6046afd78eafad503d16b0c07b}} 
+\index{Renderer@{Renderer}!window@{window}}
+\index{window@{window}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window$\ast$ Renderer\+::window = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Renderer_8h}{Renderer.\+h}}\item 
+src/\mbox{\hyperlink{Renderer_8cpp}{Renderer.\+cpp}}\end{DoxyCompactItemize}

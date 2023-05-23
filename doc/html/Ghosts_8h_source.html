@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/Ghosts.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Ghosts.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Ghosts_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GHOSTS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GHOSTS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Entity_8h.html">Entity.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classGhosts.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGhosts.html">Ghosts</a> : <span class="keyword">public</span> <a class="code" href="classEntity.html">Entity</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classGhosts.html#af489229514a4a1b2bfdb36bd5111af7c">Ghosts</a>(<span class="keywordtype">float</span> <a class="code" href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">x</a>, <span class="keywordtype">float</span> <a class="code" href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">y</a>, <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>, <a class="code" href="structTile.html">Tile</a> target, <span class="keywordtype">int</span> <a class="code" href="classGhosts.html#aef0cd62095ba5a6aa45a3969f286e659">dotCounter</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classGhosts.html#a9de33d2ba1acf7facca912fc69fd004f">~Ghosts</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGhosts.html#aa955dd2aa90864bf812195fabcd5d5cd">move</a>(<span class="keywordtype">int</span> pacmanX, <span class="keywordtype">int</span> pacmanY, std::shared_ptr&lt;Intersection&gt; dest, <span class="keywordtype">int</span> dotEaten);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGhosts.html#acf074084f4370c079e8a8ada0f0bc353">render</a>(<span class="keywordtype">int</span> frame, SDL_Renderer *renderer, SDL_Texture *texture);</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGhosts.html#a638041597fb24d0faab9d1453013b7fb">   42</a></span>&#160;    <span class="keyword">virtual</span> std::shared_ptr&lt;Intersection&gt; <a class="code" href="classGhosts.html#a638041597fb24d0faab9d1453013b7fb">getDestination</a>() = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classGhosts.html#a16c2953056f8975f36fc3ee63200ad7c">   43</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classGhosts.html#a16c2953056f8975f36fc3ee63200ad7c">setDestination</a>(std::shared_ptr&lt;Intersection&gt; dest) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGhosts.html#a2b78cf05dc43e84bddc2b6017725ec11">setMode</a>(<span class="keywordtype">int</span> <a class="code" href="classGhosts.html#a5a302ed5d0e444d508d516f90a895fd7">mode</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGhosts.html#a4b097f032b64e0602e8e21463e4b9d91">getMode</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classGhosts.html#a0fd14e8674efd24ed3ffe7e746f9e25a">   46</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structTile.html">Tile</a> <a class="code" href="classGhosts.html#a0fd14e8674efd24ed3ffe7e746f9e25a">getOrig</a>() = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classGhosts.html#a9a7a94493a862c879f4d0458435f970d">   49</a></span>&#160;    std::vector&lt;SDL_Rect&gt; <a class="code" href="classGhosts.html#a9a7a94493a862c879f4d0458435f970d">sprites</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    SDL_Rect <a class="code" href="classGhosts.html#a6e9191c8bab34b9516fc16b44617b50a">getSprite</a>(<span class="keywordtype">int</span> frame, <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classGhosts.html#a5a302ed5d0e444d508d516f90a895fd7">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGhosts.html#a5a302ed5d0e444d508d516f90a895fd7">mode</a> = <a class="code" href="constants_8h.html#a2811f6c090b957083ccbb709a01e60b0">SCATTER</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classGhosts.html#a1a5abcef3c694e34a78c495b7b28568f">   52</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGhosts.html#a1a5abcef3c694e34a78c495b7b28568f">previousMode</a> = <a class="code" href="constants_8h.html#a2811f6c090b957083ccbb709a01e60b0">SCATTER</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::shared_ptr&lt;Intersection&gt; <a class="code" href="classGhosts.html#a0f0af108c5f7844ffe7738db406a3576">makeTurn</a>(<span class="keywordtype">int</span> pacmanX, <span class="keywordtype">int</span> pacmanY,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                           std::shared_ptr&lt;Intersection&gt; dest);</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classGhosts.html#a1389ce7e21124932086715292a902f01">   66</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structTile.html">Tile</a> <a class="code" href="classGhosts.html#a1389ce7e21124932086715292a902f01">getGoalTile</a>(<span class="keywordtype">int</span> pacmanX, <span class="keywordtype">int</span> pacmanY) = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classGhosts.html#a3c55084c81d3cc34f965a8ecfe3ce13f">   67</a></span>&#160;    <a class="code" href="structTile.html">Tile</a> <a class="code" href="classGhosts.html#a3c55084c81d3cc34f965a8ecfe3ce13f">scatterTarget</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGhosts.html#ac68c9e83700a82ee8ebaa4f8aaa2f25c">oppositeDirection</a>(<span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classGhosts.html#a24cf10993afdef0b67811e0a0fc6e215">   69</a></span>&#160;    std::mt19937 <a class="code" href="classGhosts.html#a24cf10993afdef0b67811e0a0fc6e215">rng</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classGhosts.html#acaf9af6ffc1ba3f22b17fa66e5f96ca4">   70</a></span>&#160;    Uint32 <a class="code" href="classGhosts.html#acaf9af6ffc1ba3f22b17fa66e5f96ca4">modeTimer</a> = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classGhosts.html#aef0cd62095ba5a6aa45a3969f286e659">   71</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGhosts.html#aef0cd62095ba5a6aa45a3969f286e659">dotCounter</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classGhosts.html#a68ef54054eb2004e6cd7262cc7597fc9">   72</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGhosts.html#a68ef54054eb2004e6cd7262cc7597fc9">isFree</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GHOSTS_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aEntity_8h_html"><div class="ttname"><a href="Entity_8h.html">Entity.h</a></div></div>
+<div class="ttc" id="aclassEntity_html"><div class="ttname"><a href="classEntity.html">Entity</a></div><div class="ttdoc">Entity class.</div><div class="ttdef"><b>Definition:</b> Entity.h:18</div></div>
+<div class="ttc" id="aclassEntity_html_a8b23bd918644de44e25a7f08ed55d1e2"><div class="ttname"><a href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">Entity::direction</a></div><div class="ttdeci">int direction</div><div class="ttdef"><b>Definition:</b> Entity.h:40</div></div>
+<div class="ttc" id="aclassEntity_html_abc2d19ee6ff26b8520428894da6a8f68"><div class="ttname"><a href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">Entity::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> Entity.h:37</div></div>
+<div class="ttc" id="aclassEntity_html_af4966f81d91cc8f8d5eb9e9002240c49"><div class="ttname"><a href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">Entity::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> Entity.h:38</div></div>
+<div class="ttc" id="aclassGhosts_html"><div class="ttname"><a href="classGhosts.html">Ghosts</a></div><div class="ttdoc">Ghosts class.</div><div class="ttdef"><b>Definition:</b> Ghosts.h:15</div></div>
+<div class="ttc" id="aclassGhosts_html_a0f0af108c5f7844ffe7738db406a3576"><div class="ttname"><a href="classGhosts.html#a0f0af108c5f7844ffe7738db406a3576">Ghosts::makeTurn</a></div><div class="ttdeci">std::shared_ptr&lt; Intersection &gt; makeTurn(int pacmanX, int pacmanY, std::shared_ptr&lt; Intersection &gt; dest)</div><div class="ttdoc">return the next intersection</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:108</div></div>
+<div class="ttc" id="aclassGhosts_html_a0fd14e8674efd24ed3ffe7e746f9e25a"><div class="ttname"><a href="classGhosts.html#a0fd14e8674efd24ed3ffe7e746f9e25a">Ghosts::getOrig</a></div><div class="ttdeci">virtual Tile getOrig()=0</div></div>
+<div class="ttc" id="aclassGhosts_html_a1389ce7e21124932086715292a902f01"><div class="ttname"><a href="classGhosts.html#a1389ce7e21124932086715292a902f01">Ghosts::getGoalTile</a></div><div class="ttdeci">virtual Tile getGoalTile(int pacmanX, int pacmanY)=0</div></div>
+<div class="ttc" id="aclassGhosts_html_a16c2953056f8975f36fc3ee63200ad7c"><div class="ttname"><a href="classGhosts.html#a16c2953056f8975f36fc3ee63200ad7c">Ghosts::setDestination</a></div><div class="ttdeci">virtual void setDestination(std::shared_ptr&lt; Intersection &gt; dest)=0</div></div>
+<div class="ttc" id="aclassGhosts_html_a1a5abcef3c694e34a78c495b7b28568f"><div class="ttname"><a href="classGhosts.html#a1a5abcef3c694e34a78c495b7b28568f">Ghosts::previousMode</a></div><div class="ttdeci">int previousMode</div><div class="ttdef"><b>Definition:</b> Ghosts.h:52</div></div>
+<div class="ttc" id="aclassGhosts_html_a24cf10993afdef0b67811e0a0fc6e215"><div class="ttname"><a href="classGhosts.html#a24cf10993afdef0b67811e0a0fc6e215">Ghosts::rng</a></div><div class="ttdeci">std::mt19937 rng</div><div class="ttdef"><b>Definition:</b> Ghosts.h:69</div></div>
+<div class="ttc" id="aclassGhosts_html_a2b78cf05dc43e84bddc2b6017725ec11"><div class="ttname"><a href="classGhosts.html#a2b78cf05dc43e84bddc2b6017725ec11">Ghosts::setMode</a></div><div class="ttdeci">void setMode(int mode)</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:11</div></div>
+<div class="ttc" id="aclassGhosts_html_a3c55084c81d3cc34f965a8ecfe3ce13f"><div class="ttname"><a href="classGhosts.html#a3c55084c81d3cc34f965a8ecfe3ce13f">Ghosts::scatterTarget</a></div><div class="ttdeci">Tile scatterTarget</div><div class="ttdef"><b>Definition:</b> Ghosts.h:67</div></div>
+<div class="ttc" id="aclassGhosts_html_a4b097f032b64e0602e8e21463e4b9d91"><div class="ttname"><a href="classGhosts.html#a4b097f032b64e0602e8e21463e4b9d91">Ghosts::getMode</a></div><div class="ttdeci">int getMode()</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:23</div></div>
+<div class="ttc" id="aclassGhosts_html_a5a302ed5d0e444d508d516f90a895fd7"><div class="ttname"><a href="classGhosts.html#a5a302ed5d0e444d508d516f90a895fd7">Ghosts::mode</a></div><div class="ttdeci">int mode</div><div class="ttdef"><b>Definition:</b> Ghosts.h:51</div></div>
+<div class="ttc" id="aclassGhosts_html_a638041597fb24d0faab9d1453013b7fb"><div class="ttname"><a href="classGhosts.html#a638041597fb24d0faab9d1453013b7fb">Ghosts::getDestination</a></div><div class="ttdeci">virtual std::shared_ptr&lt; Intersection &gt; getDestination()=0</div></div>
+<div class="ttc" id="aclassGhosts_html_a68ef54054eb2004e6cd7262cc7597fc9"><div class="ttname"><a href="classGhosts.html#a68ef54054eb2004e6cd7262cc7597fc9">Ghosts::isFree</a></div><div class="ttdeci">bool isFree</div><div class="ttdef"><b>Definition:</b> Ghosts.h:72</div></div>
+<div class="ttc" id="aclassGhosts_html_a6e9191c8bab34b9516fc16b44617b50a"><div class="ttname"><a href="classGhosts.html#a6e9191c8bab34b9516fc16b44617b50a">Ghosts::getSprite</a></div><div class="ttdeci">SDL_Rect getSprite(int frame, int direction)</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:25</div></div>
+<div class="ttc" id="aclassGhosts_html_a9a7a94493a862c879f4d0458435f970d"><div class="ttname"><a href="classGhosts.html#a9a7a94493a862c879f4d0458435f970d">Ghosts::sprites</a></div><div class="ttdeci">std::vector&lt; SDL_Rect &gt; sprites</div><div class="ttdef"><b>Definition:</b> Ghosts.h:49</div></div>
+<div class="ttc" id="aclassGhosts_html_a9de33d2ba1acf7facca912fc69fd004f"><div class="ttname"><a href="classGhosts.html#a9de33d2ba1acf7facca912fc69fd004f">Ghosts::~Ghosts</a></div><div class="ttdeci">~Ghosts()</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:9</div></div>
+<div class="ttc" id="aclassGhosts_html_aa955dd2aa90864bf812195fabcd5d5cd"><div class="ttname"><a href="classGhosts.html#aa955dd2aa90864bf812195fabcd5d5cd">Ghosts::move</a></div><div class="ttdeci">void move(int pacmanX, int pacmanY, std::shared_ptr&lt; Intersection &gt; dest, int dotEaten)</div><div class="ttdoc">move the ghost</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:45</div></div>
+<div class="ttc" id="aclassGhosts_html_ac68c9e83700a82ee8ebaa4f8aaa2f25c"><div class="ttname"><a href="classGhosts.html#ac68c9e83700a82ee8ebaa4f8aaa2f25c">Ghosts::oppositeDirection</a></div><div class="ttdeci">int oppositeDirection(int direction)</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:93</div></div>
+<div class="ttc" id="aclassGhosts_html_acaf9af6ffc1ba3f22b17fa66e5f96ca4"><div class="ttname"><a href="classGhosts.html#acaf9af6ffc1ba3f22b17fa66e5f96ca4">Ghosts::modeTimer</a></div><div class="ttdeci">Uint32 modeTimer</div><div class="ttdef"><b>Definition:</b> Ghosts.h:70</div></div>
+<div class="ttc" id="aclassGhosts_html_acf074084f4370c079e8a8ada0f0bc353"><div class="ttname"><a href="classGhosts.html#acf074084f4370c079e8a8ada0f0bc353">Ghosts::render</a></div><div class="ttdeci">void render(int frame, SDL_Renderer *renderer, SDL_Texture *texture)</div><div class="ttdoc">render the ghost</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:35</div></div>
+<div class="ttc" id="aclassGhosts_html_aef0cd62095ba5a6aa45a3969f286e659"><div class="ttname"><a href="classGhosts.html#aef0cd62095ba5a6aa45a3969f286e659">Ghosts::dotCounter</a></div><div class="ttdeci">int dotCounter</div><div class="ttdef"><b>Definition:</b> Ghosts.h:71</div></div>
+<div class="ttc" id="aclassGhosts_html_af489229514a4a1b2bfdb36bd5111af7c"><div class="ttname"><a href="classGhosts.html#af489229514a4a1b2bfdb36bd5111af7c">Ghosts::Ghosts</a></div><div class="ttdeci">Ghosts(float x, float y, int direction, Tile target, int dotCounter)</div><div class="ttdef"><b>Definition:</b> Ghosts.cpp:3</div></div>
+<div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
+<div class="ttc" id="aconstants_8h_html_a2811f6c090b957083ccbb709a01e60b0"><div class="ttname"><a href="constants_8h.html#a2811f6c090b957083ccbb709a01e60b0">SCATTER</a></div><div class="ttdeci">#define SCATTER</div><div class="ttdef"><b>Definition:</b> constants.h:44</div></div>
+<div class="ttc" id="astructTile_html"><div class="ttname"><a href="structTile.html">Tile</a></div><div class="ttdoc">Tile struct.</div><div class="ttdef"><b>Definition:</b> Maze.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

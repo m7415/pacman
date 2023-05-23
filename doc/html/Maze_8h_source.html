@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/Maze.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Maze.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Maze_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAZE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAZE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Gomme_8h.html">Gomme.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Intersection_8h.html">Intersection.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structTile.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structTile.html">Tile</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structTile.html#a47b5eb2072d4b1978923a480043899c9">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structTile.html#a47b5eb2072d4b1978923a480043899c9">x</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structTile.html#a2d87d8813151af6bbd60811964f047a8">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structTile.html#a2d87d8813151af6bbd60811964f047a8">y</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classMaze.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMaze.html">Maze</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classMaze.html#a7ecf1da4b9685f97bf3110a8479e724b">Maze</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classMaze.html#a4f187353f595193318ac66133a22287e">~Maze</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="classMaze.html#a9d233b265681d8769ac931e566adc742">getCell</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> col) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMaze.html#a210ae5ab961b8cd130c7d2bf010e1c75">getWidth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMaze.html#a275cb08cc708a067757f5b15a7a44dae">getHeight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::vector&lt;std::shared_ptr&lt;Intersection&gt;&gt; <a class="code" href="classMaze.html#a2744a8b8e9861f19468622c954464b37">getIntersections</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::shared_ptr&lt;Intersection&gt; <a class="code" href="classMaze.html#a24d528376eba6bd9a00bba27af553c18">getIntersection</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::vector&lt;std::shared_ptr&lt;Gomme&gt;&gt; <a class="code" href="classMaze.html#a9d62030b11056fbd2e4210c7a695ce0d">getGommes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMaze.html#a1b4a4e850a4bc2fc58a2c1c0cda9e530">clearGomme</a>(std::shared_ptr&lt;Gomme&gt; gomme);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classMaze.html#a4f0cb26a5ed53aba3b47b90588c646f4">   46</a></span>&#160;    std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="classMaze.html#a4f0cb26a5ed53aba3b47b90588c646f4">cells</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classMaze.html#a7eaecdebc1ffb598084d5c1a85ece967">   47</a></span>&#160;    std::vector&lt;std::shared_ptr&lt;Intersection&gt;&gt; <a class="code" href="classMaze.html#a7eaecdebc1ffb598084d5c1a85ece967">intersections</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classMaze.html#a3eeeec5ebd4e4e53940b6910105be0ae">   48</a></span>&#160;    std::vector&lt;std::shared_ptr&lt;Gomme&gt;&gt; <a class="code" href="classMaze.html#a3eeeec5ebd4e4e53940b6910105be0ae">gommes</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classMaze.html#a773062dafae19d78f0d8b47846ea4286">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMaze.html#a773062dafae19d78f0d8b47846ea4286">width</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classMaze.html#a82fa5ab52766ae3b6cffa8a3eff41854">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMaze.html#a82fa5ab52766ae3b6cffa8a3eff41854">height</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MAZE_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aGomme_8h_html"><div class="ttname"><a href="Gomme_8h.html">Gomme.h</a></div></div>
+<div class="ttc" id="aIntersection_8h_html"><div class="ttname"><a href="Intersection_8h.html">Intersection.h</a></div></div>
+<div class="ttc" id="aclassMaze_html"><div class="ttname"><a href="classMaze.html">Maze</a></div><div class="ttdoc">Maze class.</div><div class="ttdef"><b>Definition:</b> Maze.h:29</div></div>
+<div class="ttc" id="aclassMaze_html_a1b4a4e850a4bc2fc58a2c1c0cda9e530"><div class="ttname"><a href="classMaze.html#a1b4a4e850a4bc2fc58a2c1c0cda9e530">Maze::clearGomme</a></div><div class="ttdeci">void clearGomme(std::shared_ptr&lt; Gomme &gt; gomme)</div><div class="ttdef"><b>Definition:</b> Maze.cpp:386</div></div>
+<div class="ttc" id="aclassMaze_html_a210ae5ab961b8cd130c7d2bf010e1c75"><div class="ttname"><a href="classMaze.html#a210ae5ab961b8cd130c7d2bf010e1c75">Maze::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdef"><b>Definition:</b> Maze.cpp:404</div></div>
+<div class="ttc" id="aclassMaze_html_a24d528376eba6bd9a00bba27af553c18"><div class="ttname"><a href="classMaze.html#a24d528376eba6bd9a00bba27af553c18">Maze::getIntersection</a></div><div class="ttdeci">std::shared_ptr&lt; Intersection &gt; getIntersection(int index) const</div><div class="ttdef"><b>Definition:</b> Maze.cpp:397</div></div>
+<div class="ttc" id="aclassMaze_html_a2744a8b8e9861f19468622c954464b37"><div class="ttname"><a href="classMaze.html#a2744a8b8e9861f19468622c954464b37">Maze::getIntersections</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Intersection &gt; &gt; getIntersections() const</div><div class="ttdef"><b>Definition:</b> Maze.cpp:395</div></div>
+<div class="ttc" id="aclassMaze_html_a275cb08cc708a067757f5b15a7a44dae"><div class="ttname"><a href="classMaze.html#a275cb08cc708a067757f5b15a7a44dae">Maze::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdef"><b>Definition:</b> Maze.cpp:406</div></div>
+<div class="ttc" id="aclassMaze_html_a3eeeec5ebd4e4e53940b6910105be0ae"><div class="ttname"><a href="classMaze.html#a3eeeec5ebd4e4e53940b6910105be0ae">Maze::gommes</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Gomme &gt; &gt; gommes</div><div class="ttdef"><b>Definition:</b> Maze.h:48</div></div>
+<div class="ttc" id="aclassMaze_html_a4f0cb26a5ed53aba3b47b90588c646f4"><div class="ttname"><a href="classMaze.html#a4f0cb26a5ed53aba3b47b90588c646f4">Maze::cells</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; cells</div><div class="ttdef"><b>Definition:</b> Maze.h:46</div></div>
+<div class="ttc" id="aclassMaze_html_a4f187353f595193318ac66133a22287e"><div class="ttname"><a href="classMaze.html#a4f187353f595193318ac66133a22287e">Maze::~Maze</a></div><div class="ttdeci">~Maze()</div><div class="ttdef"><b>Definition:</b> Maze.cpp:375</div></div>
+<div class="ttc" id="aclassMaze_html_a773062dafae19d78f0d8b47846ea4286"><div class="ttname"><a href="classMaze.html#a773062dafae19d78f0d8b47846ea4286">Maze::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> Maze.h:49</div></div>
+<div class="ttc" id="aclassMaze_html_a7eaecdebc1ffb598084d5c1a85ece967"><div class="ttname"><a href="classMaze.html#a7eaecdebc1ffb598084d5c1a85ece967">Maze::intersections</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Intersection &gt; &gt; intersections</div><div class="ttdef"><b>Definition:</b> Maze.h:47</div></div>
+<div class="ttc" id="aclassMaze_html_a7ecf1da4b9685f97bf3110a8479e724b"><div class="ttname"><a href="classMaze.html#a7ecf1da4b9685f97bf3110a8479e724b">Maze::Maze</a></div><div class="ttdeci">Maze()</div><div class="ttdoc">Construct a new Maze object.</div><div class="ttdef"><b>Definition:</b> Maze.cpp:4</div></div>
+<div class="ttc" id="aclassMaze_html_a82fa5ab52766ae3b6cffa8a3eff41854"><div class="ttname"><a href="classMaze.html#a82fa5ab52766ae3b6cffa8a3eff41854">Maze::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> Maze.h:50</div></div>
+<div class="ttc" id="aclassMaze_html_a9d233b265681d8769ac931e566adc742"><div class="ttname"><a href="classMaze.html#a9d233b265681d8769ac931e566adc742">Maze::getCell</a></div><div class="ttdeci">char getCell(int row, int col) const</div><div class="ttdef"><b>Definition:</b> Maze.cpp:377</div></div>
+<div class="ttc" id="aclassMaze_html_a9d62030b11056fbd2e4210c7a695ce0d"><div class="ttname"><a href="classMaze.html#a9d62030b11056fbd2e4210c7a695ce0d">Maze::getGommes</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Gomme &gt; &gt; getGommes() const</div><div class="ttdef"><b>Definition:</b> Maze.cpp:384</div></div>
+<div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
+<div class="ttc" id="astructTile_html"><div class="ttname"><a href="structTile.html">Tile</a></div><div class="ttdoc">Tile struct.</div><div class="ttdef"><b>Definition:</b> Maze.h:17</div></div>
+<div class="ttc" id="astructTile_html_a2d87d8813151af6bbd60811964f047a8"><div class="ttname"><a href="structTile.html#a2d87d8813151af6bbd60811964f047a8">Tile::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> Maze.h:19</div></div>
+<div class="ttc" id="astructTile_html_a47b5eb2072d4b1978923a480043899c9"><div class="ttname"><a href="structTile.html#a47b5eb2072d4b1978923a480043899c9">Tile::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> Maze.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

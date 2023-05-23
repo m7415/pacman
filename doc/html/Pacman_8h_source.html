@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/Pacman.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Pacman.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Pacman_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PACMAN_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PACMAN_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Entity_8h.html">Entity.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classPacman.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPacman.html">Pacman</a> : <span class="keyword">public</span> <a class="code" href="classEntity.html">Entity</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classPacman.html#a4bd7e7d274b17b1e27ff59347127fcd0">Pacman</a>(<span class="keywordtype">float</span> <a class="code" href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">x</a>, <span class="keywordtype">float</span> <a class="code" href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">y</a>, <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>, std::shared_ptr&lt;Intersection&gt; destination);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classPacman.html#aeeb4fea54918576dbdf20a1f325410bf">~Pacman</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPacman.html#ae78323bec47da559a46420901429cc2c">move</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPacman.html#a124c9b05d5cf830ff2d9ff26fdb87f93">render</a>(<span class="keywordtype">int</span> frame, SDL_Renderer *renderer, SDL_Texture *texture);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPacman.html#a4193ea0bb060aa8b324bdee8a87e2b44">setPlayerDirection</a>(<span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPacman.html#a362509ececd9b1e221300d2b8e5b1801">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPacman.html#a76201ca3c59ea2d8e74f463f3f6afbbd">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPacman.html#a3598616e76848e8b8f0fdad30fa8b93a">setEating</a>(<span class="keywordtype">bool</span> e);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPacman.html#a05b42429f2dc5513fa539a391c7b4adf">getEating</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classPacman.html#a2a697f1fe09c008a35c39dfaf9d53030">   44</a></span>&#160;    std::shared_ptr&lt;Intersection&gt; <a class="code" href="classPacman.html#a2a697f1fe09c008a35c39dfaf9d53030">dest</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classPacman.html#a6f8c1ff4c368d67555d742989fca6fea">   45</a></span>&#160;    std::vector&lt;SDL_Rect&gt; <a class="code" href="classPacman.html#a6f8c1ff4c368d67555d742989fca6fea">sprites</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    SDL_Rect <a class="code" href="classPacman.html#a63ce70ed502874cf445978b8c3a94467">getSprite</a>(<span class="keywordtype">int</span> frame, <span class="keywordtype">int</span> <a class="code" href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">direction</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::shared_ptr&lt;Intersection&gt; <a class="code" href="classPacman.html#a9d3b22a9147875533ed6490aca38f3e4">makeTurn</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classPacman.html#a97cd5483746bb5e2ab5c0d27ed068c9a">   55</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPacman.html#a97cd5483746bb5e2ab5c0d27ed068c9a">playerDirection</a> = <a class="code" href="constants_8h.html#a80fb826a684cf3f0d306b22aa100ddac">RIGHT</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classPacman.html#a5782c520af08175699e4e0de1b341dec">   56</a></span>&#160;    SDL_Rect <a class="code" href="classPacman.html#a5782c520af08175699e4e0de1b341dec">lastSprite</a> = {489, 1, 13, 13};</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classPacman.html#a2e50ed4298517d0829f607b6a6d261bc">   57</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPacman.html#a2e50ed4298517d0829f607b6a6d261bc">isEating</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACMAN_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aEntity_8h_html"><div class="ttname"><a href="Entity_8h.html">Entity.h</a></div></div>
+<div class="ttc" id="aclassEntity_html"><div class="ttname"><a href="classEntity.html">Entity</a></div><div class="ttdoc">Entity class.</div><div class="ttdef"><b>Definition:</b> Entity.h:18</div></div>
+<div class="ttc" id="aclassEntity_html_a8b23bd918644de44e25a7f08ed55d1e2"><div class="ttname"><a href="classEntity.html#a8b23bd918644de44e25a7f08ed55d1e2">Entity::direction</a></div><div class="ttdeci">int direction</div><div class="ttdef"><b>Definition:</b> Entity.h:40</div></div>
+<div class="ttc" id="aclassEntity_html_abc2d19ee6ff26b8520428894da6a8f68"><div class="ttname"><a href="classEntity.html#abc2d19ee6ff26b8520428894da6a8f68">Entity::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> Entity.h:37</div></div>
+<div class="ttc" id="aclassEntity_html_af4966f81d91cc8f8d5eb9e9002240c49"><div class="ttname"><a href="classEntity.html#af4966f81d91cc8f8d5eb9e9002240c49">Entity::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> Entity.h:38</div></div>
+<div class="ttc" id="aclassPacman_html"><div class="ttname"><a href="classPacman.html">Pacman</a></div><div class="ttdoc">Pacman class.</div><div class="ttdef"><b>Definition:</b> Pacman.h:14</div></div>
+<div class="ttc" id="aclassPacman_html_a05b42429f2dc5513fa539a391c7b4adf"><div class="ttname"><a href="classPacman.html#a05b42429f2dc5513fa539a391c7b4adf">Pacman::getEating</a></div><div class="ttdeci">bool getEating() const</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:23</div></div>
+<div class="ttc" id="aclassPacman_html_a124c9b05d5cf830ff2d9ff26fdb87f93"><div class="ttname"><a href="classPacman.html#a124c9b05d5cf830ff2d9ff26fdb87f93">Pacman::render</a></div><div class="ttdeci">void render(int frame, SDL_Renderer *renderer, SDL_Texture *texture)</div><div class="ttdoc">render the pacman</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:129</div></div>
+<div class="ttc" id="aclassPacman_html_a2a697f1fe09c008a35c39dfaf9d53030"><div class="ttname"><a href="classPacman.html#a2a697f1fe09c008a35c39dfaf9d53030">Pacman::dest</a></div><div class="ttdeci">std::shared_ptr&lt; Intersection &gt; dest</div><div class="ttdef"><b>Definition:</b> Pacman.h:44</div></div>
+<div class="ttc" id="aclassPacman_html_a2e50ed4298517d0829f607b6a6d261bc"><div class="ttname"><a href="classPacman.html#a2e50ed4298517d0829f607b6a6d261bc">Pacman::isEating</a></div><div class="ttdeci">bool isEating</div><div class="ttdef"><b>Definition:</b> Pacman.h:57</div></div>
+<div class="ttc" id="aclassPacman_html_a3598616e76848e8b8f0fdad30fa8b93a"><div class="ttname"><a href="classPacman.html#a3598616e76848e8b8f0fdad30fa8b93a">Pacman::setEating</a></div><div class="ttdeci">void setEating(bool e)</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:21</div></div>
+<div class="ttc" id="aclassPacman_html_a362509ececd9b1e221300d2b8e5b1801"><div class="ttname"><a href="classPacman.html#a362509ececd9b1e221300d2b8e5b1801">Pacman::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:17</div></div>
+<div class="ttc" id="aclassPacman_html_a4193ea0bb060aa8b324bdee8a87e2b44"><div class="ttname"><a href="classPacman.html#a4193ea0bb060aa8b324bdee8a87e2b44">Pacman::setPlayerDirection</a></div><div class="ttdeci">void setPlayerDirection(int d)</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:25</div></div>
+<div class="ttc" id="aclassPacman_html_a4bd7e7d274b17b1e27ff59347127fcd0"><div class="ttname"><a href="classPacman.html#a4bd7e7d274b17b1e27ff59347127fcd0">Pacman::Pacman</a></div><div class="ttdeci">Pacman(float x, float y, int direction, std::shared_ptr&lt; Intersection &gt; destination)</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:3</div></div>
+<div class="ttc" id="aclassPacman_html_a5782c520af08175699e4e0de1b341dec"><div class="ttname"><a href="classPacman.html#a5782c520af08175699e4e0de1b341dec">Pacman::lastSprite</a></div><div class="ttdeci">SDL_Rect lastSprite</div><div class="ttdef"><b>Definition:</b> Pacman.h:56</div></div>
+<div class="ttc" id="aclassPacman_html_a63ce70ed502874cf445978b8c3a94467"><div class="ttname"><a href="classPacman.html#a63ce70ed502874cf445978b8c3a94467">Pacman::getSprite</a></div><div class="ttdeci">SDL_Rect getSprite(int frame, int direction)</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:120</div></div>
+<div class="ttc" id="aclassPacman_html_a6f8c1ff4c368d67555d742989fca6fea"><div class="ttname"><a href="classPacman.html#a6f8c1ff4c368d67555d742989fca6fea">Pacman::sprites</a></div><div class="ttdeci">std::vector&lt; SDL_Rect &gt; sprites</div><div class="ttdef"><b>Definition:</b> Pacman.h:45</div></div>
+<div class="ttc" id="aclassPacman_html_a76201ca3c59ea2d8e74f463f3f6afbbd"><div class="ttname"><a href="classPacman.html#a76201ca3c59ea2d8e74f463f3f6afbbd">Pacman::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:19</div></div>
+<div class="ttc" id="aclassPacman_html_a97cd5483746bb5e2ab5c0d27ed068c9a"><div class="ttname"><a href="classPacman.html#a97cd5483746bb5e2ab5c0d27ed068c9a">Pacman::playerDirection</a></div><div class="ttdeci">int playerDirection</div><div class="ttdef"><b>Definition:</b> Pacman.h:55</div></div>
+<div class="ttc" id="aclassPacman_html_a9d3b22a9147875533ed6490aca38f3e4"><div class="ttname"><a href="classPacman.html#a9d3b22a9147875533ed6490aca38f3e4">Pacman::makeTurn</a></div><div class="ttdeci">std::shared_ptr&lt; Intersection &gt; makeTurn()</div><div class="ttdoc">return the next intersection</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:57</div></div>
+<div class="ttc" id="aclassPacman_html_ae78323bec47da559a46420901429cc2c"><div class="ttname"><a href="classPacman.html#ae78323bec47da559a46420901429cc2c">Pacman::move</a></div><div class="ttdeci">void move()</div><div class="ttdoc">move the pacman</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:85</div></div>
+<div class="ttc" id="aclassPacman_html_aeeb4fea54918576dbdf20a1f325410bf"><div class="ttname"><a href="classPacman.html#aeeb4fea54918576dbdf20a1f325410bf">Pacman::~Pacman</a></div><div class="ttdeci">~Pacman()</div><div class="ttdef"><b>Definition:</b> Pacman.cpp:15</div></div>
+<div class="ttc" id="aconstants_8h_html_a80fb826a684cf3f0d306b22aa100ddac"><div class="ttname"><a href="constants_8h.html#a80fb826a684cf3f0d306b22aa100ddac">RIGHT</a></div><div class="ttdeci">#define RIGHT</div><div class="ttdef"><b>Definition:</b> constants.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

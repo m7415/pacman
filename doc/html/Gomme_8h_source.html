@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/Gomme.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Gomme.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Gomme_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GOMME_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GOMME_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classGomme.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGomme.html">Gomme</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classGomme.html#ab417bbd2e8e17c2b4669f2d503d675e6">Gomme</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, SDL_Rect <a class="code" href="classGomme.html#a1ebf9456f0830cbb7cf110abed4f81d5">sprite</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classGomme.html#a2a186198fe14e8447563ab59584fa7f8">~Gomme</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGomme.html#a2643ea20a1ff1b1184b5661b1bb04846">render</a>(SDL_Renderer *renderer, SDL_Texture *texture);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGomme.html#a46ee5e47841ad815cc3a16fe48e86dfa">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGomme.html#a26f54b19fb17b64ed59194b9cab669e0">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGomme.html#a29784eecfe710ae9a1a61f10be9bf629">getType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classGomme.html#a9cc47b83ecc65a9d5123d70171b34e2c">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGomme.html#a9cc47b83ecc65a9d5123d70171b34e2c">x_pixel</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classGomme.html#affacc950696b5400994c331605ece0fa">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGomme.html#affacc950696b5400994c331605ece0fa">y_pixel</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classGomme.html#a1ebf9456f0830cbb7cf110abed4f81d5">   28</a></span>&#160;    SDL_Rect <a class="code" href="classGomme.html#a1ebf9456f0830cbb7cf110abed4f81d5">sprite</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classGomme.html#a1702aed0d49edf32544cb93d5afc02eb">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGomme.html#a1702aed0d49edf32544cb93d5afc02eb">type</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GOMME_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassGomme_html"><div class="ttname"><a href="classGomme.html">Gomme</a></div><div class="ttdoc">Gomme class.</div><div class="ttdef"><b>Definition:</b> Gomme.h:16</div></div>
+<div class="ttc" id="aclassGomme_html_a1702aed0d49edf32544cb93d5afc02eb"><div class="ttname"><a href="classGomme.html#a1702aed0d49edf32544cb93d5afc02eb">Gomme::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> Gomme.h:29</div></div>
+<div class="ttc" id="aclassGomme_html_a1ebf9456f0830cbb7cf110abed4f81d5"><div class="ttname"><a href="classGomme.html#a1ebf9456f0830cbb7cf110abed4f81d5">Gomme::sprite</a></div><div class="ttdeci">SDL_Rect sprite</div><div class="ttdef"><b>Definition:</b> Gomme.h:28</div></div>
+<div class="ttc" id="aclassGomme_html_a2643ea20a1ff1b1184b5661b1bb04846"><div class="ttname"><a href="classGomme.html#a2643ea20a1ff1b1184b5661b1bb04846">Gomme::render</a></div><div class="ttdeci">void render(SDL_Renderer *renderer, SDL_Texture *texture)</div><div class="ttdef"><b>Definition:</b> Gomme.cpp:21</div></div>
+<div class="ttc" id="aclassGomme_html_a26f54b19fb17b64ed59194b9cab669e0"><div class="ttname"><a href="classGomme.html#a26f54b19fb17b64ed59194b9cab669e0">Gomme::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdef"><b>Definition:</b> Gomme.cpp:17</div></div>
+<div class="ttc" id="aclassGomme_html_a29784eecfe710ae9a1a61f10be9bf629"><div class="ttname"><a href="classGomme.html#a29784eecfe710ae9a1a61f10be9bf629">Gomme::getType</a></div><div class="ttdeci">int getType() const</div><div class="ttdef"><b>Definition:</b> Gomme.cpp:19</div></div>
+<div class="ttc" id="aclassGomme_html_a2a186198fe14e8447563ab59584fa7f8"><div class="ttname"><a href="classGomme.html#a2a186198fe14e8447563ab59584fa7f8">Gomme::~Gomme</a></div><div class="ttdeci">~Gomme()</div><div class="ttdef"><b>Definition:</b> Gomme.cpp:13</div></div>
+<div class="ttc" id="aclassGomme_html_a46ee5e47841ad815cc3a16fe48e86dfa"><div class="ttname"><a href="classGomme.html#a46ee5e47841ad815cc3a16fe48e86dfa">Gomme::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdef"><b>Definition:</b> Gomme.cpp:15</div></div>
+<div class="ttc" id="aclassGomme_html_a9cc47b83ecc65a9d5123d70171b34e2c"><div class="ttname"><a href="classGomme.html#a9cc47b83ecc65a9d5123d70171b34e2c">Gomme::x_pixel</a></div><div class="ttdeci">int x_pixel</div><div class="ttdef"><b>Definition:</b> Gomme.h:26</div></div>
+<div class="ttc" id="aclassGomme_html_ab417bbd2e8e17c2b4669f2d503d675e6"><div class="ttname"><a href="classGomme.html#ab417bbd2e8e17c2b4669f2d503d675e6">Gomme::Gomme</a></div><div class="ttdeci">Gomme(int x, int y, SDL_Rect sprite)</div><div class="ttdef"><b>Definition:</b> Gomme.cpp:3</div></div>
+<div class="ttc" id="aclassGomme_html_affacc950696b5400994c331605ece0fa"><div class="ttname"><a href="classGomme.html#affacc950696b5400994c331605ece0fa">Gomme::y_pixel</a></div><div class="ttdeci">int y_pixel</div><div class="ttdef"><b>Definition:</b> Gomme.h:27</div></div>
+<div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

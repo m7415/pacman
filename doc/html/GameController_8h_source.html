@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman:  Fichier source de include/GameController.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pacman
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Pacman game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="GameController_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Game_8h.html">Game.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Renderer_8h.html">Renderer.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classGameController.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGameController.html">GameController</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classGameController.html#a7d72ff3f639acb68578e20fee3649b42">GameController</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classGameController.html#aab436961a422d078975bc7a49bdfcab7">~GameController</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGameController.html#a5d6169c7a3aae6db94690e2f27d780a2">run</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGameController.html#a7ee539ce68019f5cd8b203cd6a07ffb6">processEvent</a>(<span class="keyword">const</span> SDL_Event &amp;event);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classGameController.html#adfa4b9089fe780e5e86a28dc331f02da">   46</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGameController.html#adfa4b9089fe780e5e86a28dc331f02da">quitGame</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classGameController.html#a5bc22fd160fa4b1a0d75dc92d3f83966">   47</a></span>&#160;    std::unique_ptr&lt;Game&gt; <a class="code" href="classGameController.html#a5bc22fd160fa4b1a0d75dc92d3f83966">game</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classGameController.html#a488d3c3da8196d552226c800f6e2724f">   48</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGameController.html#a488d3c3da8196d552226c800f6e2724f">state</a> = <a class="code" href="constants_8h.html#a0a662770058f59d1cccc737c9c52b446">STARTING</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="ttc" id="aGame_8h_html"><div class="ttname"><a href="Game_8h.html">Game.h</a></div></div>
+<div class="ttc" id="aRenderer_8h_html"><div class="ttname"><a href="Renderer_8h.html">Renderer.h</a></div></div>
+<div class="ttc" id="aclassGameController_html"><div class="ttname"><a href="classGameController.html">GameController</a></div><div class="ttdoc">This class is responsible for running the game loop and processing events.</div><div class="ttdef"><b>Definition:</b> GameController.h:17</div></div>
+<div class="ttc" id="aclassGameController_html_a488d3c3da8196d552226c800f6e2724f"><div class="ttname"><a href="classGameController.html#a488d3c3da8196d552226c800f6e2724f">GameController::state</a></div><div class="ttdeci">int state</div><div class="ttdef"><b>Definition:</b> GameController.h:48</div></div>
+<div class="ttc" id="aclassGameController_html_a5bc22fd160fa4b1a0d75dc92d3f83966"><div class="ttname"><a href="classGameController.html#a5bc22fd160fa4b1a0d75dc92d3f83966">GameController::game</a></div><div class="ttdeci">std::unique_ptr&lt; Game &gt; game</div><div class="ttdef"><b>Definition:</b> GameController.h:47</div></div>
+<div class="ttc" id="aclassGameController_html_a5d6169c7a3aae6db94690e2f27d780a2"><div class="ttname"><a href="classGameController.html#a5d6169c7a3aae6db94690e2f27d780a2">GameController::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">This function runs the game loop.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:44</div></div>
+<div class="ttc" id="aclassGameController_html_a7d72ff3f639acb68578e20fee3649b42"><div class="ttname"><a href="classGameController.html#a7d72ff3f639acb68578e20fee3649b42">GameController::GameController</a></div><div class="ttdeci">GameController()</div><div class="ttdoc">Construct a new Game Controller object.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:3</div></div>
+<div class="ttc" id="aclassGameController_html_a7ee539ce68019f5cd8b203cd6a07ffb6"><div class="ttname"><a href="classGameController.html#a7ee539ce68019f5cd8b203cd6a07ffb6">GameController::processEvent</a></div><div class="ttdeci">void processEvent(const SDL_Event &amp;event)</div><div class="ttdoc">This function processes events.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:10</div></div>
+<div class="ttc" id="aclassGameController_html_aab436961a422d078975bc7a49bdfcab7"><div class="ttname"><a href="classGameController.html#aab436961a422d078975bc7a49bdfcab7">GameController::~GameController</a></div><div class="ttdeci">~GameController()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:8</div></div>
+<div class="ttc" id="aclassGameController_html_adfa4b9089fe780e5e86a28dc331f02da"><div class="ttname"><a href="classGameController.html#adfa4b9089fe780e5e86a28dc331f02da">GameController::quitGame</a></div><div class="ttdeci">bool quitGame</div><div class="ttdef"><b>Definition:</b> GameController.h:46</div></div>
+<div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
+<div class="ttc" id="aconstants_8h_html_a0a662770058f59d1cccc737c9c52b446"><div class="ttname"><a href="constants_8h.html#a0a662770058f59d1cccc737c9c52b446">STARTING</a></div><div class="ttdeci">#define STARTING</div><div class="ttdef"><b>Definition:</b> constants.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

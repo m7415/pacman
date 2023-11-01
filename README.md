@@ -23,7 +23,7 @@ gauche à droite et vice versa.
 
 1. Clonez ce repo sur votre machine locale.
 2. Compilez le code source C++ à l'aide de votre compilateur préféré.
-3. Exécutez le jeu.
+3. Exécutez le jeu (l'executable se trouve dans /bin)
 4. Utilisez les touches fléchées pour déplacer Pac-Man dans le labyrinthe.
 5. Évitez les fantômes tout en mangeant les pac-gommes.
 6. Gagnez des points en mangeant des fruits et en terminant les niveaux.

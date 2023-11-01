@@ -28,14 +28,6 @@ gauche à droite et vice versa.
 5. Évitez les fantômes tout en mangeant les pac-gommes.
 6. Gagnez des points en mangeant des fruits et en terminant les niveaux.
 
-## Configuration du Projet
-
-Le projet est structuré comme suit :
-
-- `src/` : Contient le code source C++ du jeu.
-- `assets/` : Inclut les ressources du jeu, telles que les images et les sons.
-- `CMakeLists.txt` : Le fichier de configuration CMake pour générer le projet.
-
 ## Dépendances
 
 Ce projet utilise SDL2 pour la gestion de la fenêtre et du rendu graphique. Assurez-vous d'installer SDL2 avant de compiler le jeu.
